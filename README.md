@@ -1,5 +1,3 @@
-# The Spring Sting: Halictid Bee Thermal & Behavioural Analysis
-
 This repository contains R scripts and datasets used in my Islands and Sustainability MSc thesis:
 
 **“The Spring Sting: Activity Patterns and Thermal Performance of Halictid Bees”**
