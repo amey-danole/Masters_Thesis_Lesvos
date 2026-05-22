@@ -1,6 +1,6 @@
 This repository contains R scripts and datasets used in my Islands and Sustainability MSc thesis:
 
-**“The Spring Sting: Activity Patterns and Thermal Performance of Halictid Bees”**
+**“The Spring Sting: Thermal Performance and Activity Patterns of Halictid Bees”**
 
 The project investigates how microclimate (air temperature, soil temperature layers, and light intensity) influences activity patterns in:
 - *Halictus scabiosae*
