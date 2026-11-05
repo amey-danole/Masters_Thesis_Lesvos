@@ -1,0 +1,1350 @@
+% Manuscript submission for the journal of Functional Ecology 
+
+\documentclass[11pt,a4paper]{article}
+
+% Page layout
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+% Fonts and spacing
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\onehalfspacing
+
+% Mathematics
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+% Figures and tables
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{caption}
+
+% References
+\usepackage[authoryear, sort]{natbib}
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+% Line numbers
+\usepackage{lineno}
+\linenumbers
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}
+\newtheorem{condition}{Condition}
+
+% Comment
+\usepackage{comment}
+
+% Highlights
+\usepackage{xcolor}
+\usepackage{soul}
+
+\begin{document}
+
+\title{\textbf{\textit{Some like it hot}: Thermal Performance and Activity Patterns of Halictid Bees on Lesvos Island, Greece}}
+
+\date{}
+
+\maketitle
+
+\begin{abstract}
+Approximately three-quarters of bee species are ground-nesting and spend much of their life cycle underground, where soil microclimate may be more important than other macro-environmental variables in shaping their ecology, behaviour, and life history. Despite this, the role of fine-scale thermal heterogeneity during early nest-founding stages remains poorly understood, particularly in primitively eusocial bees. Here, we combine physiological assays and behavioural observations to investigate how microclimatic variation influences thermal performance and activity patterns in foundresses of two ground-nesting halictid bees, \textit{Halictus scabiosae} and \textit{Lasioglossum malachurum}, during spring. First, following chill coma induction, we measured time to right, time to take-off, and body temperature during righting and take-off to assess species-specific differences in thermal thresholds and recovery capacity. Second, we quantified nest-associated behaviours and general activity at two nesting sites, while recording light, ambient temperature, and soil temperature across a depth gradient. Thermal assays revealed species-specific differences in performance, with \textit{L. malachurum} exhibiting lower righting temperatures than \textit{H. scabiosae}, although flight initiation traits were less differentiated. Activity at nesting aggregations was associated with air and soil temperature at all depths, showed non-linear responses across thermal gradients, and the relationships with shallow and middle soil temperature differed between sites. Abundance of \textit{H. scabiosae} increased with shallow soil temperature and light intensity, whereas that of \textit{L. malachurum} showed weak or no relationships. Nest guarding in \textit{H. scabiosae} responded to subsurface temperature in opposite directions: guarding probability declined with shallow soil temperature, whereas guarding duration increased with soil temperature at 5 cm. Overall, our findings indicate that activity in ground-nesting halictid bees is associated with fine-scale microclimatic heterogeneity, and that the two focal species differ in righting temperature and in the sensitivity of their activity to microclimate. Understanding these dynamics under environmental change will require stratified soil measurements, quantification of biotic pressures, and individual-level tracking across sites, seasons, and colony phases. 
+\end{abstract}
+
+\vspace{1em}
+
+\noindent\textbf{Keywords:}
+Halictidae, soil microclimate, early-season activity, chill coma recovery, Aegean islands
+
+\newpage
+
+\section{Introduction}
+
+Organisms adapt to changing environmental conditions not only through morphological and physiological changes at the individual level \citep{rodrigues2020thermal, gonzalez2020insect}, but also through adjustments in behaviour and energy allocation at the population level \citep{Gould1978, stollewerk2025plasticity}. Environmental conditions can be both predictable and stochastic, and organisms must cope with this variability either by modifying their activity patterns and energetic investment in key fitness-related processes, such as growth, development, foraging, and reproduction \citep{Eliopoulos2003, Whitfield1992}, or at the population level, by shifting their distribution \citep{Lomolino2017, Huang2022, Davis2001}. Consequently, life-history traits shift across temporal and environmental gradients \citep{Stearns1976}. Rather than being finely tuned to a single set of conditions, organisms often exhibit phenotypic plasticity that allows them to persist in fluctuating environments \citep{Burton2022}. Such environmental variability has given rise to a broad range of life-history strategies, shaped by natural selection and reflecting both contemporary ecological conditions and the evolutionary history of species. One such environmental factor that strongly influences organismal niches and life-history strategies is temperature \citep{Truebano2018, Gilbert1996, Howe1967, Kamm1974, Melville2001, Porter1988}. Thermal heterogeneity generates microclimatic variation within habitats, producing fine-scale temperature gradients that can constrain dispersal, influence gene flow, and potentially contribute to population divergence \citep{Johansson2016}. It also influences physiological rates, thereby affecting performance, energy allocation, and the nature of biotic interactions, while driving morphological, physiological, and behavioural adaptations that enable organisms to cope with environmental variability \citep{Tattersall2012, Kingsolver1998, Abram2017}. Organisms have evolved ingenious strategies to cope with thermal variation so that key life stages occur when predictable thermal conditions are most favourable \citep{Forrest2010}. 
+
+Ectotherms, characterised by low resting metabolic rates and high thermal conductance, are particularly vulnerable to environmental temperature fluctuations because they rely heavily on external conditions to regulate physiological processes and behaviours \citep{Cossins2012}. Consequently, a myriad of adaptations—genotypic and phenotypic, including morphological, physiological, and behavioural traits \citep{Bale2002, Dunham1993, Helmuth2005}—have evolved to cope with temperature variability, whether predictable (e.g., diurnal or seasonal cycles) or stochastic (e.g., extreme weather events). Ground-nesting ectotherms, such as ants, wasps, and bees, occupy the interface between heliothermy (heat gain from solar radiation, e.g. basking in sunlight) and thigmothermy (heat exchange with the ground or nest substrate, largely through conduction), making them particularly interesting systems for examining the thermoregulatory strategies they adopt to cope with thermal fluctuations under different environmental conditions. 
+
+The relationship between thermoregulation and social organisation can be further complicated because social strategies may be obligate or facultative depending on environmental conditions \citep{Soucy2002, Richards2003}. Additionally, multiple broods within a season may exhibit differing strategies depending on their emergence time, highlighting the complexity of behavioural adaptations. Behavioural thermoregulation, through adjustments in activity patterns and the frequency, duration, and timing of behaviours such as nest closing and nest guarding in response to variation in temperature and solar insolation across microclimatic mosaics, emerges as a necessary buffering strategy \citep{Kearney2009, Bogert1949, Bartholomew1964}, especially in ectotherms that operate close to their thermal limits \citep{HueyStevenson1979, Kearney2009}. 
+
+The sweat bee family Halictidae (Hymenoptera), in which social organisation varies within and among species, therefore offers a tractable system for examining how behavioural strategies are shaped by thermal constraints. This large and taxonomically diverse group includes many ground-nesting bees. More broadly, approximately three-quarters of wild bee species nest in the ground \citep{Antoine2021, Knerer1969, Fawcett2019}. Halictidae exhibit remarkable social polymorphism, spanning a continuum from solitary and communal to semi-social, primitively eusocial, and advanced eusocial forms \citep{Eickwort1996, Richards2000, Dunn2003}, with the limits of each category remaining unclearly defined \citep{Antoine2021}. Halictid bees are present across most faunal zones and consist of closely related species, suggesting ongoing evolutionary diversification within the group \citep{Richards1953}. However, even closely related species may differ substantially in nest architecture \citep{Knerer1969} and, subsequently, in social organisation \citep{Packer1985, Schwarz2007}, and these species can often be found nesting side by side in the same location \citep{Knerer1969, Batra1966}. Colony size ranges from small (2–4 individuals) to large (over 200 individuals), sometimes with strong division of labour and caste segregation \citep{Lienhard2010}. In some species, multiple foundresses may cooperatively establish a single nest (pleometrosis), after which one female becomes the dominant reproductive individual \citep{Packer1986a}. Subordinate females may remain as workers or disperse to establish new nests as colony size increases. Nest reuse across seasons is common, with females often overwintering near their natal nests \citep{Kukuk2002}. The diversity in social organisation makes halictid bees a valuable system for examining how sociality interacts with thermoregulatory behaviour. In particular, variation across generations and nesting environments, such as ground-nesting conditions influenced by soil temperature and structure, provides an opportunity to investigate how behavioural and physiological responses to temperature are shaped by both social and environmental factors.
+
+Early-season pollinator activity remains understudied, particularly in ground-nesting bees and in Mediterranean settings \citep{Harmon2020}. Bees are among the most important pollinators globally, and polylectic halictid bees (i.e. generalist foragers that do not specialise on specific host plants but utilise a wide range of floral resources) visit diverse wild and cultivated plants and play a crucial role in maintaining ecosystem functioning \citep{Corbet1993}. Evidence suggests that prior heat exposure does not substantially improve bees’ ability to withstand high temperatures \citep{Gonzalez2024}. If spring-active reproductive foundress females are adversely affected by thermal stress, subsequent generations may fail to develop, potentially reducing population size and compromising long-term reproductive success and viability. Behavioural thermoregulation may therefore represent a key mechanism by which bees buffer temperature variation, making it essential to quantify how individuals allocate time to different activities under variable thermal conditions in natural settings. 
+
+This study focuses on two primitively eusocial, ground-nesting halictid bee species, \textit{Halictus scabiosae} and \textit{Lasioglossum malachurum} \citep{Plateaux2008, Michener2007}, which co-occur on the Greek island of Lesvos. Both species produce more than one brood per year \citep{Michener2007, Fawcett2019}, and are polylectic \citep{Shebl2012, Bogusch2020}. Because spring-active foundresses establish nests and produce broods, their ability to recover from cold exposure may be relevant to their early-season activity and nesting behaviours. We address a gap in early-season knowledge by quantifying the thermal performance and activity patterns of spring-active foundresses, which may differ from those of later broods that have been the primary focus of previous research \citep{Gonzalez2024}. By combining behavioural observations with experimentally derived thermal performance metrics, this study links experimentally measured recovery traits with realised behavioural responses in natural environments. Field observations (at a broad spatial scale) and nesting behaviours (at a focal-view scale), including nest entry and exit frequencies and nest-guarding duration, are combined with physiological performance measured using a chill-coma recovery assay. This assay records the time and temperature required for bees to regain righting ability and flight initiation (take-off), providing two measures of functional recovery from chill-coma impairment. We ask whether variation in recovery performance is reflected in activity and nesting behaviour under variable microclimatic conditions, and whether activity is better associated with air temperature, light, or soil temperature at different depths. We hypothesise that the less cold-resilient species maintains higher activity during warmer periods of the day and at higher ambient and soil temperatures. We also ask whether differences in body size may help explain variation in thermal performance between the two species. More broadly, these comparisons may help clarify how species-specific responses to temperature could shape activity during spring as temperatures change.
+
+\section{Methods}
+
+\subsection{Synopsis of bee species}
+
+\textit{L. malachurum} (Kirby, 1802) is a primitively eusocial halictid bee and is widely distributed in the Western Palearctic region across Europe and North Africa and from Iberia to the Caucasus \citep{Polidori2010, Knerer1992, Michener1979}. \textit{L. malachurum} is smaller than \textit{H. scabiosae} (Rossi, 1790) which is present in the west of the Palearctic and has its primary distribution in western-southern Europe but has recently been recorded in eastern-central Europe \citep{Gil2024, Pauly2016}. Both \textit{L. malachurum} and \textit{H. scabiosae} are primitively eusocial, and social organisation within Halictidae ranges from solitary to eusocial depending on ecological conditions and population structure \citep{Gonzalez2024a}. Both focal species are characterised by long flight seasons from early spring (March) till the start of autumn (September-October) \citep{Gogala1991, Knerer1980, Weissel2006, Brand2012}. Primitively eusocial species of sweat bees like the two focal species are generally characterised by small colonies, ill-defined castes, frequent queen displacements and a higher proportion of males in the summer brood \citep{Knerer1969}. \textit{L. malachurum} shows a relatively strict eusocial structure, with a clear reproductive division of labour and temporal separation between brood generations. However, the number of broods produced each season is more flexible, showing clinal variation and tending to increase with higher soil temperatures, although this effect is relatively weak and is also associated with shorter nesting cycles \citep{Weissel2006}. Mated female gynes hibernate during winter before founding nests solitarily in spring. The number of broods laid can vary, with populations in warmer climates generally producing more broods per season \citep{Knerer1992, Richards2000}. In contrast, \textit{H. scabiosae} exhibits a more flexible form of eusociality, with two distinct broods each season. Gynes overwinter in the same nest and, upon emerging from hibernation, reuse it for the following season \citep{Lienhard2010}. At the start of the season, females jointly initiate nests \citep{Gogala1991}, after which dominance hierarchies form and a single female typically becomes the primary reproductive individual while the others act as subordinates. Early-season broods are predominantly female \citep{Knerer1967} and contribute to colony growth, whereas late-season broods consist of both males and gynes. Males die at the end of the season, while gynes mate in autumn, overwinter and become nest foundresses in the following year \citep{Gogala1991}.
+
+\subsection{Study site}
+
+The study was conducted in an unmanaged pasture near Skala Kallonis (39$^\circ$12'36''\,N, 26$^\circ$12'12''\,E; 1.0~m a.s.l.) on the Greek island of Lesvos over 10 days (15--24 April 2026), corresponding to spring conditions in the region (Figure~\ref{fig:study_area}, Supplementary Table~\ref{tab:supp_climate_apr15_24}, Supplementary Table~\ref{tab:multi_april_climate}, Supplementary Table~\ref{tab:supp_tmax}). Previous work at the same study site has also examined both species in relation to thermal sensitivity \citep{Gonzalez2020a}, although during summer conditions. The site consists of bare, sandy alluvial soil with sparse vegetation, providing suitable nesting habitat for ground-nesting bees \citep{Wuellner1999, Potts1997, Wesserling1995, Gregory2005, Severns2004}. The area also includes patchy anthropogenic disturbance, such as metal fencing, wire, and wooden debris, consistent with previous observations that halictine bees (members of the subfamily Halictinae within the family Halictidae, including the two focal species examined in this study) may preferentially nest in disturbed habitats \citep{Batra1966}. Seven managed \textit{Apis mellifera} hives were present approximately 250 m from the study area. Observations were conducted at two sub-sites (hereafter referred to as "sites", approximately 5–6 m\textsuperscript{2}), selected based on high nesting density and clear visibility of nest entrances, which may facilitate nest location via social or environmental cueing \citep{Potts1997, Michener2007}. Multi-tunnel nesting aggregations of \textit{H. scabiosae} and \textit{L. malachurum} co-occurred at both sites, as noted in previous studies \citep{Polidori2010, Antoine2021, Gonzalez2018}. The sites were surrounded by an unmanaged wildflower meadow characterised by \textit{Ranunculus sardous}, \textit{Raphanus raphanistrum}, \textit{Trifolium resupinatum}, \textit{Lysimachia arvensis}, and \textit{Matricaria spp.}, with additional taxa including \textit{Crepis spp.}, \textit{Hordeum spp.}, \textit{Rumex spp.}, and \textit{Taraxacum spp.}. Nesting aggregations were most frequently associated with bare, sandy patches dominated by sparse \textit{Matricaria spp.}, \textit{Trifolium resupinatum}, and \textit{Lysimachia arvensis} vegetation. For the chill-coma recovery assay, samples were collected from sites surrounding the behavioural observation area that were spatially distinct from the observation sites.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{Final_figures/Lesvos_methods_figure_final_clean.png}
+\caption{Study location on Lesvos, Greece. (a) Lesvos (orange) within Greece (grey). (b) Skala Kallonis on Lesvos (orange star). Panels (a) and (b) were prepared in QGIS (version 3.40.0, ``Bratislava''). (c) Study area showing the approximate locations of Sites 1 and 2 (yellow outlines) in Google Earth satellite imagery dated 24 May 2024, viewed from 107~m above ground level. The midpoint between the sites is at 39$^\circ$12'32.98''N, 26$^\circ$12'13.74''E, approximately 1~m above sea level.}
+\label{fig:study_area}
+\end{figure}
+
+\subsection{Chill coma recovery assays}
+
+To quantify functional thermal thresholds under field-relevant conditions, we measured the temperature and time required for individuals to recover function following cold immobilisation, defined as (i) righting (regaining an upright posture) and (ii) take-off (initiation of flight). Individuals were collected from sites separate from those used for behavioural recordings and placed individually in ventilated plastic vials sealed with cotton (Figure~\ref{fig:Supp_HS}). Individuals were not marked for these assays, as the high abundance of bees at collection sites, combined with sampling across multiple sites, reduced the likelihood of repeatedly capturing the same individuals and minimised potential pseudoreplication. Chill coma was induced by cooling individuals in either a freezer or a portable cooling box filled with ice and was confirmed by complete immobilisation and a lack of response to mechanical stimulation by gently flicking the tube \citep{Oyen2021, David1998, Anderson2005}. Following immobilisation, individuals were transferred to an experimental arena under ambient conditions and allowed to recover passively. Ambient temperature was continuously recorded using a thermocouple thermometer (Omega HH23, bare type K thermocouple), while bee surface temperature was simultaneously monitored using a thermal imaging camera (FLIR C5) positioned above the experimental arena. Time to right and take-off were recorded using a stopwatch. The experimental arena consisted of a polystyrene enclosure (26 × 17 cm) that helped buffer the bees from external temperature fluctuations and ensure consistent imaging conditions. Body mass was measured prior to trials using a precision balance (Acculab PP2060D; readability 0.001 g), and individuals were handled using fine forceps (Rubis Tech, Switzerland). Body size was estimated using intertegular distance (ITD) as a proxy \citep{Cane1987}. ITD, defined as the linear distance between the tegulae at the base of the forewings on the dorsal thorax, was measured from dorsal images using ImageJ \citep{Schneider2012} (Figure~\ref{fig:Supp_HS}, Figure~\ref{fig:L_malachurum}). Each individual was measured twice from independent images, and the mean value was used for analyses. Measurement error was small relative to the difference between species (mean absolute difference between repeats = 0.019 cm versus a species difference of 0.134 cm; mean coefficient of variation = 4.8\%). During recovery, individuals were positioned ventral-side up, and we recorded the elapsed time until each bee regained a normal upright posture (time to right) and its body temperature at that point (righting temperature). We also recorded body temperature at flight initiation (take-off temperature) and the elapsed time until flight initiation (time to take-off). 
+
+\subsection{Behavioural monitoring and microclimate measurements}
+
+Six cameras (a heterogeneous system comprising two action cameras, a mobile phone, an iPad, a camcorder, and a digital single-lens reflex (DSLR) camera) were deployed to record nest-level activity and surrounding arthropod interactions. Two cameras were positioned at Site~1, approximately 1.5~m apart, to capture complementary perspectives: a wide-angle view of the general study area and a zoomed-in view centred on the nest entrances (hereafter referred to as the "focal'' view). Three cameras were positioned at Site~2, approximately 1--1.5~m apart, with two capturing focal-views and one providing a wide-angle view. An additional camera was positioned between the two sites to opportunistically capture behavioural observations rather than for systematic sampling and was therefore excluded from the final analysis. One focal-view camera at Site~2 was also excluded from the final analysis because its recordings were redundant with the other focal-view recordings. Recordings were 10 min long and started at the beginning of each hour. Individual bees were not marked, owing to time constraints and to minimise disturbance during recording. We analysed 166 wide-angle recordings (83 per site, one wide-angle camera per site; one scheduled recording per site was unavailable) and 163 focal-view observations. Focal-view recordings were scheduled hourly (start times 10:00--17:00 on days 1--6 and 09:00--17:00 on days 7--10; sampling was extended to 09:00 from day 7 onwards to capture earlier onset of daily activity), giving 168 scheduled recordings (84 per site). Five were unavailable (days 1, 2 and 6). A separate early-activity check (08:00 on day 7 at Site~1) was not included in the 163 focal-view observations because logger data were unavailable.
+
+Behavioural observations quantified nest-level activity and behavioural repertoires of \textit{H. scabiosae} and \textit{L. malachurum}. Recorded variables included (i) nest entry and exit frequency, and (ii) occurrence and time spent guarding at nest entrances. Nest guarding was quantified only in \textit{H. scabiosae}, as it could not be reliably assessed in \textit{L. malachurum} due to small nesting entrances and restricted camera angles that limited consistent detection of nest-associated behaviour. Consequently, analyses for nest-guarding were restricted to \textit{H. scabiosae} (Figure~\ref{fig:HSGuarding}, Supplementary Table~\ref{tab:focal_summary}). Bee abundance was quantified as the number of bees visible outside nests at approximately 2, 4, 6, 8 and 10 min after recording onset (±10 s) and averaged per recording (hence values are multiples of 0.2). In focal-view recordings, counts were made separately for \textit{H. scabiosae} and \textit{L. malachurum}; in wide-angle recordings, the mean number of bees visible outside nests was used as a relative index of activity at the nesting aggregations. Nest entries and exits were counted throughout each 10-min focal-view recording.
+
+Microclimatic conditions were monitored using iButton Thermochron (1-Wire Thermochron; DS1922L; Maxim Integrated, USA) and Hygrochron (1-Wire Hygrochron; DS1923-F5) data loggers deployed across both sites. iButton thermochrons recorded air temperature at 2 m height (within a well-ventilated PVC housing extending beyond a stone wall) and soil temperature at multiple depths (surface, 2–3 cm, 5 cm, and 10 cm). An iButton hygrochron was installed at 10 cm depth near Site 1 to record subsurface humidity and temperature conditions. Nests of \textit{L. malachurum} may reach depths of 10–15 cm during the nest-founding stage \citep{Knerer1992, Legewie1925, Noll1931}. Deeper soil measurements (>10 cm) were not conducted in order to minimise repeated disturbance of soil structure, as loggers required periodic retrieval for data verification and maintenance due to battery age and variable reliability. Restricting sampling depth despite nests extending to 20–30 cm depth \citep{Lienhard2010} reduced disruption to nesting microhabitats and ensured minimal impact on the study system. Light intensity was recorded with a HOBO light logger from 19 April, covering 95 of the 163 focal-view observations (part of day 5 and days 6--10), whereas thermochrons recorded throughout the study. Relative humidity was excluded from analyses due to ceiling effects (predominantly 100\% saturation, consistent with previous findings \citep{Potts1997}), which limited variability and interpretability. Surface temperature records from surface-level loggers at Site 1 and Site 2 were missing for 17–18 April 2026 due to a brief technical error. Air temperature was taken from the 2 m iButton, which recorded throughout the study; a HOBO logger (from 19 April) read on average 4.6\,$^\circ$C lower ($n = 94$; $r = 0.58$), so air temperatures are best interpreted as relative values.
+
+\subsection{Statistical analyses}
+
+ITD was compared between species with a linear model. Righting temperature, take-off temperature, time to right and time to take-off were analysed with linear mixed-effects models (LMMs) including ITD, ambient temperature and species in different combinations (and, in sensitivity models for the two temperatures, log-transformed time to right or to take-off), with sampling date as a random intercept. ITD was additionally examined within each species, for each of the four traits, in exploratory linear models that also included ambient temperature (Figure~\ref{fig:ThermalTraitsITD}); Holm-adjusted $p$-values were calculated across these eight tests. Wide-angle activity (mean number of bees) was related to air temperature and soil temperature (2--3, 5 and 10 cm) with generalised additive models (GAMs) fitted separately for each layer, with site as a fixed effect and sampling date as a random intercept. Site differences in these relationships were tested by likelihood-ratio tests of shared versus site-specific smooths (sampling date as a random intercept; Holm-adjusted $p$-values). As robustness checks, models were also fitted without the date term and compared with the date-adjusted models by AIC (maximum likelihood fits), with each temperature centred within sampling date, and with a larger basis dimension ($k = 8$ instead of 5); the share of variance in each temperature layer lying between sampling dates was estimated with a random-intercept linear mixed model (Supplementary Table~\ref{tab:wide_robustness}).
+
+Focal-view observations were analysed as follows. Nest-guarding occurrence in \textit{H. scabiosae} was modelled with a binomial generalised linear mixed model (GLMM) and log-transformed guarding duration with an LMM, both with site and day as random intercepts. Because temperature layers were strongly correlated (up to $r \approx 0.9$), each layer was tested in a separate duration model, with Holm-adjusted $p$-values across the five layers. Surface temperature records were missing for 17--18 April, so the surface-layer duration model used 32 of the 40 recordings with guarding. Abundance was analysed in two ways. First, a linear model of log(abundance + 1) included species, standardised environmental variables (ambient air, soil temperature at three depths, light intensity) and their interactions with species, for the 95 observations with light-logger data; interactions were tested with marginal $F$-tests and species-specific slopes estimated with \texttt{emmeans}. As a sensitivity analysis, the model was refitted with random intercepts for day and observation. Second, to test whether species differed in timing beyond temperature, LMMs of log-transformed abundance included species, hour of day, air temperature, shallow soil temperature, site and species interactions, with day and observation as random intercepts (the latter accounts for both species being recorded in each observation). Nest entries and exits were analysed as counts with negative binomial GLMMs (\texttt{glmmTMB}) using the same fixed effects and random intercepts. These models used all 163 observations and were repeated with light added for the 95 observations with light data (for nest exits in this subset, the null model failed to converge and was excluded from the comparison). Models were fitted by maximum likelihood and ranked by AICc, and collinearity was checked with variance inflation factors. Daily activity curves were estimated with species-specific GAM smooths of hour, compared with a shared smooth by likelihood-ratio test, and centre of activity (abundance-weighted mean hour) and first active hour were compared between species with LMMs. Nest entry and exit frequencies were also modelled, as an exploratory analysis, with Gaussian GAMs of log(count + 1) including smooths of each thermal layer and light (95 observations).
+
+All analyses were performed in R (version 4.4.2; R Core Team, 2024) using RStudio (version 2024.9.1+394; Posit Team, 2024; "Cranberry Hibiscus'' release). Mixed models were fitted with \texttt{lme4} and \texttt{lmerTest}, count models with \texttt{glmmTMB}, GAMs with \texttt{mgcv}, slopes with \texttt{emmeans}, model comparison with \texttt{MuMIn}, and collinearity with \texttt{car} and \texttt{performance}. Residuals of the wide-angle and focal-view GAMs were checked with \texttt{DHARMa} (Supplementary Table~\ref{tab:dharma}). Figures were produced with \texttt{ggplot2} and \texttt{patchwork}.
+
+\section{Results}
+
+\subsection{Interspecific differences in body size}
+
+Body size differed between species, with \textit{H. scabiosae} exhibiting a larger ITD than \textit{L. malachurum} (Figure~\ref{fig:new_ITD}, Supplementary Table~\ref{tab:species_chill_coma}). Mean ITD was 0.340 $\pm$ 0.0329~cm in \textit{H. scabiosae} and 0.206 $\pm$ 0.0220~cm in \textit{L. malachurum}, corresponding to a 1.65-fold difference in body size between species. A linear model confirmed a significant effect of species identity on ITD, with \textit{L. malachurum} exhibiting a smaller ITD than \textit{H. scabiosae} ($\beta = -0.134$ cm, SE = 0.0095, $t = -14.08$, $p < 0.001$). Body mass and ITD were strongly correlated ($r = 0.75$), indicating substantial collinearity between body size metrics. Body mass was therefore excluded from subsequent analyses, and ITD retained as the primary proxy for body size because it is less affected by feeding state. 
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{Final_figures/new_ITD_violin.png}
+\caption{Intertegular distance (ITD) in \textit{Halictus scabiosae} and \textit{Lasioglossum malachurum}. Violin plots show the distributions for each species. Boxplots indicate the median and interquartile range, with whiskers extending to the most extreme observations within $1.5 \times$ the interquartile range. Points represent individual bees, and sample sizes ($n$) are shown above each group.}
+\label{fig:new_ITD}
+\end{figure}
+
+\subsection{Recovery temperature}
+
+\subsubsection{Righting temperature}
+
+A linear mixed-effects model indicated a significant positive effect of ambient temperature on righting temperature ($\beta = 0.98$, SE = 0.15, $t = 6.55$, $p < 0.001$), indicating that bees righted at higher body temperatures under warmer environmental conditions. Species identity also had a significant effect, with \textit{L. malachurum} exhibiting lower righting temperatures than \textit{H. scabiosae} ($\beta = -2.49$, SE = 0.88, $t = -2.84$, $p = 0.0078$), suggesting species-specific differences in acute recovery temperature thresholds (Figure~\ref{fig:ThermalPerformance}). ITD was not included in this final model. The association with ambient temperature remained after accounting for time to right ($\beta = 0.98$, SE = 0.15, $t = 6.49$, $p < 0.001$), but the species difference was weaker in this model ($\beta = -1.85$, SE = 0.93, $t = -1.99$, $p = 0.056$); time to right was not associated with righting temperature ($p = 0.27$). Variation among sampling dates remained (variance = 1.148), indicating between-day heterogeneity in righting temperature.
+
+\subsubsection{Take-off temperature}
+
+A linear mixed-effects model indicated a strong positive effect of ambient temperature on take-off temperature ($\beta = 1.41$, SE = 0.23, $t = 6.02$, $p < 0.001$), indicating that bees initiated flight at higher body temperatures under warmer environmental conditions. Species identity showed a negative marginal effect, with \textit{L. malachurum} tending to initiate flight at slightly lower temperatures than \textit{H. scabiosae}, although this difference was not statistically supported ($\beta = -2.10$, SE = 1.12, $t = -1.88$, $p = 0.069$). The association with ambient temperature remained after accounting for time to take-off ($\beta = 1.29$, SE = 0.23, $t = 5.51$, $p < 0.001$), and take-off temperature also increased with time to take-off ($\beta = 2.21$, SE = 0.70, $t = 3.16$, $p = 0.004$); the species difference remained unsupported ($p = 0.088$).
+
+\subsection{Recovery time}
+
+\subsubsection{Time to right}
+
+Because ITD was collinear with species identity, the duration models testing species differences included species identity and ambient temperature but not ITD. Time to right (log-transformed) tended to be shorter in \textit{L. malachurum}, but the species difference was not statistically supported after accounting for ambient temperature ($\beta = -0.42$, SE = 0.21, $t = -1.98$, $p = 0.057$). Ambient temperature was not associated with time to right ($\beta = 0.033$, SE = 0.036, $t = 0.90$, $p = 0.377$). Variation among sampling dates was low (variance = 0.066).
+
+\subsubsection{Time to take-off}
+
+Neither species identity nor ambient temperature was associated with time to take-off (log-transformed). The species effect was not statistically supported ($\beta = 0.003$, SE = 0.251, $t = 0.01$, $p = 0.989$), and ambient temperature had no detectable effect ($\beta = 0.058$, SE = 0.053, $t = 1.09$, $p = 0.284$). The estimated variance among sampling dates was zero, and the model had a singular fit. Refer to Supplementary Table~\ref{tab:physiology_models} for model statistics.
+
+\subsection{Body size and recovery within species}
+
+In exploratory species-specific linear models that also included ambient temperature, ITD was negatively associated with righting temperature ($\beta = -93.07$ per cm, SE = 36.45, $t = -2.55$, $p = 0.023$) and take-off temperature ($\beta = -91.60$ per cm, SE = 41.59, $t = -2.20$, $p = 0.045$) in \textit{L. malachurum} ($n = 17$), but not in \textit{H. scabiosae} (righting temperature: $p = 0.26$; take-off temperature: $p = 0.67$; $n = 18$). ITD was not associated with time to right or time to take-off in either species (all $p \geq 0.24$; Figure~\ref{fig:ThermalTraitsITD}). Neither temperature association remained significant after Holm correction across the eight tests (smallest adjusted $p = 0.18$), so we treat them as exploratory (Supplementary Table~\ref{tab:physiology_models}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Multipanel_thermal_performance.png}
+\caption{Thermal performance traits in \textit{H. scabiosae} and \textit{L. malachurum}: (a) righting temperature, (b) time to right, (c) take-off temperature, and (d) time to take-off. Violin plots show the distributions for each species. Boxplots indicate the median and interquartile range, with whiskers extending to the most extreme observations within $1.5 \times$ the interquartile range. Points represent individual bees, and sample sizes ($n$) are shown above each group. Time measures are plotted as $\ln(\text{seconds} + 1)$.}
+\label{fig:ThermalPerformance}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{Final_figures/Thermal_traits_vs_ITD_multipanel.png}
+\caption{Relationships between intertegular distance (ITD) and (a) righting temperature, (b) time to right, (c) take-off temperature, and (d) time to take-off in \textit{Halictus scabiosae} and \textit{Lasioglossum malachurum}. Points show individual bees; lines show species-specific linear fits, with shaded bands indicating 95\% confidence intervals. Time measures are plotted as $\ln(\text{seconds} + 1)$.}
+\label{fig:ThermalTraitsITD}
+\end{figure}
+
+\subsection{Thermal correlates of bee activity}
+
+Wide-angle activity was analysed for 166 recordings on 10 days (15--24 April; Supplementary Table~\ref{tab:daily_activity}). In generalised additive models including site and a random intercept for sampling date, activity varied with ambient air temperature (edf = 2.95, $F = 22.63$, $p < 0.001$; adjusted $R^2 = 0.43$), shallow soil temperature at 2--3~cm (edf = 3.48, $F = 11.72$, $p < 0.001$; adjusted $R^2 = 0.34$), middle soil temperature at 5~cm (edf = 3.64, $F = 13.26$, $p < 0.001$; adjusted $R^2 = 0.36$), and deep soil temperature at 10~cm (edf = 3.83, $F = 38.11$, $p < 0.001$; adjusted $R^2 = 0.57$; Figure~\ref{fig:GAMwide}, Supplementary Table~\ref{tab:behavioural_gam}). Adjusted $R^2$ values include the date effect. DHARMa residual checks showed no evidence of departures from uniformity, dispersion, or outliers (Supplementary Table~\ref{tab:dharma}), but the low $k$-index values (0.69--0.73) indicated residual structure; pooled curves are therefore descriptive. Site-specific models showed that the relationships with shallow and middle soil temperature differed between sites (shallow: $\chi^2 = 15.19$, df = 1.03, Holm-adjusted $p = 0.0002$; middle: $\chi^2 = 32.68$, df = 4.35, Holm-adjusted $p < 0.001$; Holm adjustment across the three valid comparisons; Supplementary Figure~\ref{fig:sup_site_specific_GAM}), whereas the relationship with deep soil temperature did not ($\chi^2 = 1.85$, df = 4.22, Holm-adjusted $p = 0.79$). For shallow soil, activity was associated with temperature at Site 2 ($p < 0.001$), but not at Site 1 ($p = 0.857$). Within sites, air-temperature smooths were linear (edf = 1.0), and a formal site comparison was not valid because the site-specific smooths used fewer effective degrees of freedom than the shared smooth.
+
+These results were robust to how sampling date and basis dimension were handled (Supplementary Table~\ref{tab:wide_robustness}). Including sampling date improved model fit for every layer ($\Delta$AIC = 37--93), and most of the variation in shallow (72\%) and middle (75\%) soil temperature occurred within days, compared with 59\% for air temperature and 96\% for deep soil. Without the date term, shallow soil temperature was only weakly related to activity ($p = 0.056$, with site as a fixed effect), whereas all four layers were clearly related to activity when temperature was centred within sampling date ($p < 0.001$ in each case). All four relationships remained significant with a larger basis dimension ($k = 8$).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/wide_behavioural_gam_figure.png}
+\caption{Generalised additive model (GAM) fits showing wide-angle bee activity (mean number of bees observed) in relation to (a) ambient air temperature, (b) shallow soil temperature (2--3~cm), (c) middle soil temperature (5~cm), and (d) deep soil temperature (10~cm). Soil temperatures were averaged across sensors at the two sites. Each thermal variable was fitted in a separate model with site as a fixed effect and sampling date as a random intercept. Curves show predictions for Site 1 with the date effect excluded. Models used 166 recordings collected from 15--24 April.}
+\label{fig:GAMwide}
+\end{figure}
+
+\subsection{Nest guarding duration and probability of nest guarding in \textit{H. scabiosae}}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{Final_figures/HS_guarding_figure_newly_updated.png}
+\caption{Effects of subsurface soil temperature on nest guarding in \textit{H. scabiosae}. (a) Predicted probability of guarding in relation to shallow soil temperature (2--3~cm), from a binomial generalised linear mixed-effects model. (b) Predicted log-transformed guarding duration in relation to middle soil temperature (5~cm), from a linear mixed-effects model. Temperatures were standardised using the mean and standard deviation (SD) across 163 focal-view observations (shallow: $19.65 \pm 3.20~^\circ$C; middle: $18.51 \pm 2.83~^\circ$C). Values of $-2$ and $+2$ correspond to mean $\pm 2$ SD (shallow: 13.26--26.05~$^\circ$C; middle: 12.84--24.18~$^\circ$C). Observed ranges were 13.0--27.6~$^\circ$C for shallow soil and 11.6--24.5~$^\circ$C for middle soil. Lines show model predictions; shaded ribbons indicate 95\% confidence intervals.}
+\label{fig:HSGuarding}
+\end{figure}
+
+Nest guarding duration increased with soil temperature at 5 cm depth ($\beta = 0.506 \pm 0.166$, $t = 3.04$, $p = 0.004$; $n = 40$ recordings with guarding; Supplementary Table~\ref{tab:lm_models}). Because the temperature layers were strongly correlated, each was tested in a separate model; after Holm correction, only soil temperature at 5 cm depth remained significant (adjusted $p = 0.022$), although deep soil (10 cm) showed a similar positive association (adjusted $p = 0.074$). Ambient air, surface and shallow soil temperatures were not significant predictors. Random effects indicated moderate variation among days and low variation among sites.
+
+In contrast, the probability of nest guarding decreased significantly with increasing shallow soil temperature (2--3 cm depth; $\beta = -0.94 \pm 0.27$, $z = -3.50$, $p < 0.001$; $n = 163$ observations, of which 40 included guarding), indicating reduced guarding activity under warmer subsurface conditions (Supplementary Table~\ref{tab:lm_models}). Variation among days and sites was moderate.
+
+\subsection{Species differences in abundance, timing and thermal dependence of activity}
+
+Focal-view observations comprised 163 observations over 10 days (hourly, 09:00--17:00; 09:00 was sampled on four days only). Temperature was recorded for all observations, whereas the light logger recorded for 95 observations (part of day 5 and days 6--10). Analyses without light therefore used all 163 observations, and analyses including light used the 95 observations with light data.
+
+\subsubsection{Time of day and temperature}
+
+Abundance was substantially better supported by a model including hour, ambient air temperature and shallow soil temperature than by models including only time of day or only temperature ($\Delta$AICc = 38.5 and 31.5, respectively). \textit{L. malachurum} was less abundant than \textit{H. scabiosae} ($\beta = -0.34 \pm 0.03$, $p < 0.001$). In \textit{H. scabiosae}, abundance increased with air temperature ($0.16 \pm 0.03$ per SD, $p < 0.001$) and shallow soil temperature ($0.19 \pm 0.04$, $p < 0.001$) and decreased with hour of day after accounting for temperature ($-0.10 \pm 0.02$ per hour, $p < 0.001$). In \textit{L. malachurum}, none of these relationships differed clearly from zero (all $p \geq 0.06$). The species differed significantly in all three relationships (species $\times$ hour, $p < 0.001$; species $\times$ air temperature, $p = 0.012$; species $\times$ shallow soil temperature, $p < 0.001$).
+
+Nest entries were best supported by the model including hour and temperature (Akaike weight 0.57), although the time-only model was nearly equivalent ($\Delta$AICc = 0.65). Entries of \textit{H. scabiosae} decreased with hour ($\beta = -0.39 \pm 0.15$, $p = 0.008$) and increased with air temperature ($0.59 \pm 0.24$, $p = 0.015$). Entries of \textit{L. malachurum} also decreased with hour ($-0.43 \pm 0.18$, $p = 0.020$) but did not vary with air temperature ($0.22 \pm 0.26$, $p = 0.40$); the species did not differ significantly in their air-temperature response (species $\times$ air temperature, $p = 0.13$). Nest exits were best supported by the time-only model (Akaike weight 0.91). Exits decreased with hour in both species (\textit{H. scabiosae}: $-0.38 \pm 0.15$, $p = 0.012$; \textit{L. malachurum}: $-0.52 \pm 0.20$, $p = 0.011$), with no effect of air or shallow soil temperature in either species (all $p \geq 0.17$) and no species differences (all species interactions $p \geq 0.14$).
+
+\subsubsection{Daily activity curves}
+
+Species-specific smooths of hour fitted better than a shared smooth ($p = 0.016$), but both species peaked around midday (predicted peak at 11.6 h in \textit{H. scabiosae} and 11.8 h in \textit{L. malachurum}; Figure~\ref{fig:activity_by_hour}). The centre of activity did not differ between species ($0.01 \pm 0.25$ h, $p = 0.96$). \textit{L. malachurum} was first detected $0.60 \pm 0.28$ h later than \textit{H. scabiosae} ($p = 0.041$), a difference confounded with its lower abundance and with the 10:00 start of observations on days 1--6.
+
+\subsubsection{Effect of light intensity}
+
+In the 95 observations with light data, the light-only model was best supported for abundance (Akaike weight 0.49), nest entries (0.86) and, for nest exits, the light-only model was best supported (next-best model $\Delta$AICc = 1.85; the null model failed to converge and was excluded). Models without light were less supported for abundance ($\Delta$AICc $\geq 4.5$). Light intensity was correlated with ambient air temperature ($r = 0.77$) and hour ($r = -0.58$), so their effects cannot be fully separated. When all terms were included, effects of hour were not significant in either species for entries or exits (all $p \geq 0.058$) and no species interaction was significant for nest entries or exits (all $p \geq 0.07$). For nest entries, the light slope was clearer in \textit{L. malachurum} ($1.82 \pm 0.68$, $p = 0.008$) than in \textit{H. scabiosae} ($0.64 \pm 0.37$, $p = 0.088$), although the species difference was not supported ($p = 0.075$).
+
+\subsubsection{Abundance across thermal layers}
+
+A linear model including all thermal layers and light (95 observations, each contributing one row per species; $R^2 = 0.556$; $F_{11,178} = 20.3$, $p < 0.001$) indicated that abundance of \textit{H. scabiosae} increased with shallow soil temperature ($\beta = 0.32 \pm 0.08$, $p < 0.001$) and light intensity ($0.24 \pm 0.05$, $p < 0.001$) and decreased with soil temperature at 5 cm ($-0.29 \pm 0.10$, $p = 0.006$), whereas ambient air and deep soil temperature had no detectable effect ($p = 0.61$ and $0.56$). In \textit{L. malachurum}, no slope differed from zero (all $p \geq 0.24$). Only the species $\times$ light interaction was statistically supported ($F_{1,178} = 8.24$, $p = 0.005$); the interaction with shallow soil temperature was marginal ($p = 0.058$), and those with air, 5 cm and 10 cm soil temperature were not ($p = 0.27$, $0.25$ and $0.42$; Supplementary Table~\ref{tab:lm_models}). The opposing signs of the shallow and 5 cm soil terms reflect collinearity among soil layers and indicate relative rather than independent associations (Figure~\ref{fig:multi_species_abundance}, Supplementary Figure~\ref{fig:sup_gam_abundance}). A sensitivity analysis with random intercepts for day and observation gave the same species-specific slopes (day variance was estimated at zero, giving a singular fit). The species $\times$ light interaction remained supported ($p = 0.002$), and the species $\times$ shallow soil interaction, marginal in the linear model, was supported in this model ($p = 0.037$). As individual bees could not be distinguished, pseudoreplication cannot be fully excluded.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{Final_figures/focal_activity_by_hour.png}
+\caption{Hourly activity in focal-view observations of \textit{H. scabiosae} and \textit{L. malachurum}. Points show the mean $\pm$ standard error of log(abundance + 1) at each hour. Lines show species-specific smooths from generalised additive models (GAMs), with random effects excluded; shaded bands indicate 95\% confidence intervals.}
+\label{fig:activity_by_hour}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/multi_panel_abundance_clean_newly_updated.png}
+\caption{Relationships between environmental variables and bee abundance in \textit{H. scabiosae} and \textit{L. malachurum}, predicted from a linear model fitted to 95 focal-view observations with light data. Panels show predicted abundance across (a) ambient air temperature, (b) shallow soil temperature (2--3~cm), (c) middle soil temperature (5~cm), (d) deep soil temperature (10~cm), and (e) light intensity. Temperature variables were standardised using the mean and standard deviation across all 163 focal-view observations; light intensity was standardised using the 95 observations with light data. Soil temperatures had the following mean $\pm$ standard deviation: shallow, $19.65 \pm 3.20~^\circ$C; middle, $18.51 \pm 2.83~^\circ$C; deep, $17.62 \pm 2.17~^\circ$C. Values of $-2$ and $+2$ therefore correspond to mean $\pm 2$ standard deviations (shallow: 13.26--26.05~$^\circ$C; middle: 12.84--24.18~$^\circ$C; deep: 13.27--21.96~$^\circ$C). Observed ranges were 13.0--27.6~$^\circ$C for shallow soil, 11.6--24.5~$^\circ$C for middle soil, and 12.1--21.5~$^\circ$C for deep soil. Lines show model predictions; shaded ribbons indicate 95\% confidence intervals.}
+\label{fig:multi_species_abundance}
+\end{figure}
+
+\subsection{Environmental correlates of nest entry and exit frequency}
+
+The focal-view Gaussian GAMs of nest entry and exit frequency are exploratory, as residual diagnostics indicated departures from model assumptions, particularly for \textit{L. malachurum} (Supplementary Table~\ref{tab:dharma}); associations not also supported by the count models are not interpreted. Nest entries of both species were non-linearly related to surface soil temperature (\textit{H. scabiosae}: edf = 2.13, $F = 3.54$, $p = 0.024$; \textit{L. malachurum}: edf = 2.36, $F = 6.32$, $p < 0.001$), whereas nest exits were associated with surface and shallow soil temperature in \textit{H. scabiosae} and with air temperature in \textit{L. malachurum} (Supplementary Table~\ref{tab:gam_models}; Supplementary Figures~\ref{fig:sup_gam_environmental_predictors}). Light and deep soil temperature were not significant in any model, and the models explained 23.0--40.5\% of deviance.
+
+\section{Discussion}
+
+In this study, we investigated species-specific patterns of abundance and behavioural responses to environmental variation in temperature and light intensity, alongside thermal performance measured via chill coma recovery, in two sweat bee species, \textit{H. scabiosae} and \textit{L. malachurum}, on Lesvos island, Greece. Body size differed significantly between species, with \textit{H. scabiosae} exhibiting larger ITD than \textit{L. malachurum}. 
+
+\subsection{Chill-coma recovery assays}
+
+Chill-coma recovery assays revealed a consistent association between ambient temperature and both righting and take-off temperatures in \textit{H. scabiosae} and \textit{L. malachurum}. Bees righted and initiated flight at higher body temperatures under warmer ambient conditions, and these associations remained after accounting for time to right and time to take-off, respectively. Take-off temperature also increased with time to take-off, consistent with bees warming passively until flight became possible.  Species identity was associated with righting temperature, with \textit{L. malachurum} righting at lower temperatures than \textit{H. scabiosae}, although this difference was weaker when time to right was included in the model. Because ITD was collinear with species identity, it was excluded from the final righting-temperature model. In exploratory species-specific models that accounted for ambient temperature, ITD was not associated with righting or take-off temperature in \textit{H. scabiosae} but was negatively associated with both in \textit{L. malachurum}, although neither association survived correction for multiple tests. Neither time to right nor time to take-off showed a statistically supported association with species identity or ambient temperature; ITD was not included in these duration models because of its collinearity with species identity. Variation among sampling dates was present for righting temperature but negligible for take-off temperature and both duration measures. Overall, thermal thresholds were associated with ambient temperature and showed some species differentiation, whereas the duration measures showed weaker evidence of species or temperature effects. 
+
+\subsection{Species-specific behavioural responses to microclimatic variation}
+
+Overall activity at the nesting aggregations was associated with air temperature and with soil temperature at all three depths once site and sampling date were accounted for (Figure~\ref{fig:GAMwide}), although the shallow and middle soil relationships differed between sites (Supplementary Figure~\ref{fig:sup_site_specific_GAM}). \textit{H. scabiosae} was substantially more abundant than \textit{L. malachurum}, but this may partly reflect differences in nest detectability and local nest density, as its nests were larger and more conspicuous. Activity of \textit{H. scabiosae} was structured by thermal conditions, light and time of day: abundance increased with warmer air and shallow soil (all 163 observations) and, in the subset with light data, with shallow soil temperature and light intensity, and, once temperature was accounted for, declined through the day. Warmer conditions may facilitate foraging by relaxing thermoregulatory constraints on flight \citep{Willmer2004,Lienhard2010}, whereas the afternoon decline may reflect resource availability or the timing of foraging bouts, which these data cannot distinguish. In contrast, abundance of \textit{L. malachurum} showed weak or no relationships with temperature, light or hour, and differed significantly from \textit{H. scabiosae} in its response to temperature, hour and light. Abundance of \textit{L. malachurum} was therefore less tightly coupled to temperature than that of \textit{H. scabiosae}, although its lower counts may have limited power to detect slopes.
+
+Nest entries and exits (counts of bees entering and leaving nest entrances, used as indices of nest-associated traffic that includes foraging trips but cannot distinguish them from other movements) did not show a clear species contrast in count models. Entries and exits of both species declined through the day, entries of \textit{H. scabiosae} increased with air temperature while those of \textit{L. malachurum} did not (species difference $p = 0.13$), and exits were explained best by time of day alone. In the subset with light data, the light-only model was best supported for nest entries. The estimated light slope was larger for \textit{L. malachurum} than for \textit{H. scabiosae}, although the species difference was not statistically supported ($p = 0.075$). Light covaries with air temperature and hour, so their effects cannot be fully separated. Associations of nest entries and exits with surface and soil temperature in the generalised additive models were not supported by the count models, so we do not interpret them as evidence of an effect. 
+
+Both species peaked around midday and their centres of activity were indistinguishable, although the shape of their daily curves differed ($p = 0.016$), so differences in activity lay in the strength of environmental dependence rather than in the timing of daily activity. 
+
+Nest guarding in \textit{H. scabiosae} showed two distinct responses: the probability of guarding decreased with increasing shallow soil temperature, whereas guarding duration increased with soil temperature at 5 cm depth, the layer that remained best supported after correcting for the five layers tested, suggesting that once guarding began, warmer nest-adjacent conditions were associated with longer guarding durations. Because soil temperatures across depths are correlated, coefficients indicate relative associations rather than independent thermal effects.
+
+\subsection{Linking thermal performance to activity under changing spring conditions}
+
+\textit{L. malachurum} righted at lower body temperatures than \textit{H. scabiosae}, which could indicate greater cold tolerance. However, righting and take-off temperatures rose with ambient temperature (slopes $\approx$ 1--1.4), indicating that bees warmed passively towards ambient conditions and that these are not fixed thresholds; species and body size are also confounded, and the duration measures did not differ between species. We therefore treat greater cold resilience of \textit{L. malachurum} as a hypothesis. Greater righting-temperature tolerance did not translate into earlier activity: both species peaked around midday, their centres of activity were indistinguishable, and \textit{L. malachurum} was first detected later, a difference confounded with its lower abundance and with the 10:00 start of observations on days 1--6. The species differed instead in how strongly activity tracked environmental conditions. Abundance of \textit{H. scabiosae}, the species with the higher righting temperature, increased with shallow soil temperature and light, whereas that of \textit{L. malachurum} showed weak or no relationships; this species difference was supported for abundance but not for nest entries and exits. This is in the direction predicted by our hypothesis that the less cold-resilient species sustains higher activity at higher temperatures, although behavioural persistence could not be compared because nest guarding was recorded only in \textit{H. scabiosae}. Because \textit{H. scabiosae} was 1.65-fold larger in ITD, body size and species identity are largely confounded, so the species difference in righting temperature cannot be attributed to intrinsic physiology rather than size. Within species, ITD was unrelated to righting and take-off temperature in \textit{H. scabiosae} but negatively associated with both in \textit{L. malachurum}, suggesting, as an exploratory result, that size may contribute. The coupling of \textit{H. scabiosae} to soil temperature, together with site-dependent soil relationships, suggests that ground-level conditions vary over small spatial scales and may matter at least as much as air temperature for ground-nesting bees. If warmer conditions persist, activity of the two species may respond differently, which future multi-season work could test. These inferences are based on a single season at two sites and should be treated as hypotheses.
+
+\subsection{Thermal ecology and nesting behaviour in halictid bees}
+
+Halictidae display substantial variation in social organisation within and among species \citep{Hirata2005, Packer1998, Plateaux1993, Richards2003, Yanega1988}, which is often associated with environmental conditions \citep{Yanega1997, Eickwort1996, Miyanaga1999} and, in some cases, genetic influences on social traits \citep{Danforth2003, Plateaux2000, Soucy2002}. Ground-nesting insects are more strongly influenced by soil temperature than air temperature in relation to nest-site selection, daily activity patterns, and energetic allocation to foraging and life-history processes \citep{Cameron1996, Crist1999, Potts1997, Strohm1998, Vogt2003, Weissel2006}. In \textit{L. malachurum}, increasing soil temperatures reduce brood development time and shorten activity pauses between broods, likely due to physiological effects on larval development \citep{Weissel2006}. Higher activity at warmer temperatures reported previously for \textit{L. malachurum} \citep{Weissel2006} is consistent with our wide-angle results, in which overall activity increased with air and soil temperature, but not with the weak species-level relationships we found for \textit{L. malachurum}, which may reflect its low counts. For \textit{H. scabiosae}, nesting preferences could be examined in a similar framework to \textit{Halictus rubicundus}, which shows higher nesting densities in areas with warmer soil temperatures at 5~cm depth relative to surrounding soils, consistent with brood cell depth \citep{Potts1997}. Because surface and shallow soil temperatures are correlated \citep{West1952, Xu1997, Rajver2006}, they may provide reliable proxies of subsurface thermal conditions, potentially allowing females to use thermal cues when selecting nest sites. Exposure to sublethal desiccation stress did not alter CT\textsubscript{max} (maximum critical temperature) or time to heat stupor in \textit{L. malachurum} \citep{Gonzalez2024a}. Similarly, prior starvation followed by sublethal desiccation did not shift mean CT\textsubscript{max}, but increased variance in CT\textsubscript{max}, suggesting greater inter-individual variability in thermal tolerance \citep{Gonzalez2024a}. If similar variability is present among foundress females, it may influence which individuals successfully establish subsequent generations under acute thermal stress, with potential consequences for population dynamics.
+
+\subsection{Future directions}
+
+Personal observations during fieldwork and analysis of behavioural videos revealed that multiple individuals of the same species may share a nest entrance. Marking individuals would be needed to determine whether multiple foundresses contribute to nest establishment or merely share entrance access, as observed in other halictid bees \citep{Paxton1999}, and to test whether dominant females guard aggressively enough to exclude returning nestmates \citep{Lienhard2010, Knerer1980, KnererPlateaux1967}. Velvet ants (Mutillidae), parasitic wasps (Hymenoptera), and bombyliid flies (Bombyliidae) \citep{Batra1966, Lienhard2010} were frequently seen inspecting nesting sites, particularly in the afternoon when nests were often closed; characterising brood-parasite presence and activity may therefore clarify nest-associated behaviour \citep{Sick1994, Wcislo1996}. Nest opening (Figure~\ref{fig:Nest_opening}) and closing (Figure~\ref{fig:Nest_closing}) durations and timings (Figure~\ref{fig:Same_day_nest}), and the conditions under which they occur, should also be recorded, as they may reveal the influence of temperature, predators, or nest-infesting parasites on nest closure and energy expenditure \citep{Lienhard2010, Sih2002, Houston1993, Minchella1985, Vandame2002, Wuellner1996}. Here, opening and closing could be observed only for \textit{H. scabiosae}, whose nests were clearly visible: nest-opening duration varied from 2--118 s (mean $\pm$ SD: 32.2 $\pm$ 42.0 s; $n=6$) and nest-closing duration from 15--456 s (170.0 $\pm$ 162.6 s; $n=5$). Burrowing and nest-switching were not captured. Preliminary observations suggest that both species may inspect and enter multiple nests within an aggregation, particularly early in the nesting cycle, potentially facilitating nest switching or usurpation of unguarded nests, which appears more frequent in \textit{H. scabiosae} \citep{Knerer1969}; mark--recapture approaches could quantify this, particularly given species differences in nest architecture (short laterals and sessile cells in \textit{H. scabiosae}; brood cells at the ends of longer laterals in \textit{L. malachurum}; \citep{Knerer1969}).
+
+Nesting habitat parameters such as soil type, texture, compaction, pH, aeration, bulk density, and moisture, which influence thermal diffusivity \citep{Marshall1996}, as well as microhabitat features including entrance orientation, vegetation cover, slope, shade, nearby stones \citep{Jones2006, Antoine2021, Packer1989, Packer1986b, Cane2015, Potts1997, Shebl2016}, and exposure to variable insolation (e.g. morning sun rather than total daily insolation; \citep{Sakagami1961}), remain poorly understood in terms of their effects on bee fitness \citep{Antoine2021}. Because nesting preferences cannot be generalised across ground-nesting bees \citep{Harmon2020}, population-level studies are needed to assess inter-population variation. The initial days of nest founding in early spring, when weather is unpredictable and soils are colder than in summer, are poorly characterised, although soil temperature from nest founding to first brood in \textit{L. malachurum} may influence colony development more than summer soil temperature \citep{Weissel2006}. Warmer soils may accelerate worker ageing and larval development and survival \citep{Cossins2012, Jeanne1992, Whitfield1992}, shortening nesting cycles and pauses between broods \citep{Weissel2006}. A global review of 449 species of ground-nesting bees reported an average minimum nesting depth of approximately 17 cm \citep{Cane2011}, and colder soils at 20--40 cm slow nest construction in \textit{L. malachurum} \citep{Weissel2006}; the 10 cm maximum depth sampled here may therefore not capture deeper nesting microclimates. Finally, because our two sites were only 7--10 m apart, comparisons across locations would help resolve site-specific effects (see \citealp{Stone1994, Redding2003, Davis2019, Mikola2018}).
+
+\subsection{Thermal limits and responses to climate change in bees}
+
+Temperature strongly influences the physiology, behaviour, mating \citep{Larsson1991}, energetic costs \citep{Kearney2009}, and life-history strategies such as timing of adult emergence \citep{Forrest2017}, number of generations per year \citep{Forrest2019}, and larval maturation and development in insects \citep{Borrell2004, Grafton2005, Woods2005}. Warmer temperatures can lead to shorter nesting cycles and a higher number of generations per year, but may also result in smaller body size and increased mortality in ectotherms; thus, population dynamics and fitness consequences are highly complex and context-dependent \citep{Kingsolver2008, Forrest2017}. Alongside rising temperatures, a suite of anthropogenic stressors—including habitat loss, pesticide exposure, and environmental disturbances such as wildfires, whose frequency is increasing, shifts in vegetation cover driven by elevated atmospheric CO$_2$ \citep{Hoffmann2002}, flooding events \citep{Roubik1980, Potts2016}, reduced floral resources due to invasive species, and pathogen and parasite spillover from managed bees—represent major contemporary threats to bees. Maintaining and restoring native vegetation can provide thermal refuges during heat stress or heat waves. At our site, which showed patchy anthropogenic disturbance and marked day-to-day variation in temperature and rainfall (Supplementary Table~\ref{tab:supp_climate_apr15_24}), conditions for ground-nesting bees were highly variable; coping with and adapting life-history strategies to such conditions is essential for survival and reproduction. During the study period, rain fell on three days (maximum 10.6~mm in a single day; total 17.4~mm; Supplementary Table~\ref{tab:supp_climate_apr15_24}), within the highly variable rainfall regime characteristic of the Mediterranean climate of Lesvos. \textit{H. scabiosae} has recently been reported to expand its range into previously unsuitable habitats in response to environmental change, with urbanisation playing a major role in this process; however, its ecological niche—characterised by high temperature seasonality and low precipitation—has remained relatively stable from 1970 to the present, suggesting limited adaptability to novel conditions \citep{Gil2024}. Consequently, habitat fragmentation and increasing urban density \citep{Lanner2022, Polidori2021} may facilitate colonisation of previously unoccupied areas by \textit{H. scabiosae} \citep{Gil2024}, although not all bee species, particularly those with specialised resource use and limited dispersal capacity, can track suitable climates by shifting poleward or to higher latitudes \citep{Kerr2015, MartinezLopez2021, Casey2015, Nemesio2016, Buckner2022}. The progressively earlier onset of spring in recent years highlights how shifting environmental conditions may require bees to adjust the timing of seasonal activity and termination \citep{Kearney2009} and adopt novel behavioural strategies to cope with thermal and climatic variability. 
+
+Over evolutionary timescales, species have shifted their geographic distributions, and such shifts are expected to become more frequent under ongoing climate change. However, physiological heat tolerance is often conserved across lineages and constrained by relatively fixed upper limits \citep{Araujo2013, Hoffmann2013}. The CT$_{max}$ values of \textit{H. scabiosae} (43\,$^\circ$C) and \textit{L. malachurum} (42\,$^\circ$C) \citep{Gonzalez2024} exceed mean summer maximum air temperatures on Lesvos (28.2\,$^\circ$C, June--August 2003--2019; Supplementary Table~\ref{tab:supp_tmax}), but mean maxima do not capture heat waves or microhabitat extremes, which may bring individuals closer to their limits \citep{Deutsch2008, Huey2009, ClusellaTrullas2011}. Behavioural thermoregulation can buffer individuals against exceeding physiological limits and increase short-term persistence, but it is ultimately constrained by those limits \citep{Huey2003}, which in turn restrict how far realised niches can expand beyond conserved fundamental thermal boundaries \citep{Jackson2000, Kearney2013}. Dispersal limitation \citep{Baselga2012}, historical contingency \citep{Ricklefs2006}, and biotic interactions \citep{Dobzhansky1950} further shape realised distributions \citep{Araujo2013}. Because our data concern recovery from cold in spring rather than heat tolerance, they speak most directly to how early-season thermal conditions shape activity; whether the species differences we observed extend to upper thermal limits remains to be tested.
+
+%%%%%%%%% References %%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{999}
+
+\bibitem[Abram et~al. (2017)]{Abram2017}
+\textbf{Abram, P. K., Boivin, G., Moiroux, J. and Brodeur, J.} (2017).
+Behavioural effects of temperature on ectothermic animals: unifying thermal physiology and behavioural plasticity.
+\textit{Biol. Rev.} 92, 1859--1876.
+
+\bibitem[Anderson et~al.(2005)]{Anderson2005}
+\textbf{Anderson, A. R., Hoffmann, A. A. and McKechnie, S. W.} (2005).
+Response to selection for rapid chill-coma recovery in \textit{Drosophila melanogaster}: physiology and life-history traits.
+\textit{Genet. Res.} 85, 15--22.
+
+\bibitem[Antoine and Forrest (2021)]{Antoine2021}
+\textbf{Antoine, C. M. and Forrest, J. R. K.} (2021).
+Nesting habitat of ground-nesting bees: a review.
+\textit{Ecol. Entomol.} 46, 143--159.
+
+\bibitem[Ara{\'u}jo et~al.(2013)]{Araujo2013}
+\textbf{Ara{\'u}jo, M. B., Ferri-Y{\'a}{\~n}ez, F., Bozinovic, F., Marquet, P. A., Valladares, F. and Chown, S. L.} (2013).
+Heat freezes niche evolution.
+\textit{Ecol. Lett.} 16, 1206--1219.
+
+\bibitem[Bale et~al.(2002)]{Bale2002}
+\textbf{Bale, J. S. et~al.} (2002).
+Herbivory in global climate change research: Direct effects of rising temperature on insect herbivores.
+\textit{Glob. Change Biol.} 8, 1--16.
+
+\bibitem[Baselga et~al.(2012)]{Baselga2012}
+\textbf{Baselga, A., Lobo, J. M., Svenning, J.-C., Arag{\'o}n, P. and Ara{\'u}jo, M. B.} (2012).
+Dispersal ability modulates the strength of the latitudinal richness gradient in European beetles.
+\textit{Glob. Ecol. Biogeogr.} doi:10.1111/j.1466-8238.2011.00753.x.
+
+\bibitem[Bartholomew (1964)]{Bartholomew1964}
+\textbf{Bartholomew, G. A.} (1964).
+The roles of physiology and behaviour in the maintenance of homeostasis in the desert environment.
+\textit{Symp. Soc. Exp. Biol.} 18, 7--29.
+
+\bibitem[Batra (1966)]{Batra1966}
+\textbf{Batra, S. W. T.} (1966). Nesting behavior of \textit{Halictus scabiosae} in Switzerland (Hymenoptera, Halictidae). \textit{Insectes Sociaux} 13, 87--92.
+
+\bibitem[Bogert (1949)]{Bogert1949}
+\textbf{Bogert, C. M.} (1949).
+Thermoregulation in reptiles, a factor in evolution.
+\textit{Evolution} 3, 195--211.
+
+\bibitem[Bogusch et~al.(2020)]{Bogusch2020}
+\textbf{Bogusch, P., Bl\'ahov\'a, E. and Hor\'ak, J.} (2020). Pollen specialists are more endangered than non-specialised bees even though they collect pollen on flowers of non-endangered plants. \textit{Arthropod-Plant Interactions} 14, 759--769.
+
+\bibitem[Borrell and Medeiros(2004)]{Borrell2004}
+\textbf{Borrell, B. J. and Medeiros, M. J.} (2004). Thermal stability and muscle efficiency in hovering orchid bees (Apidae: Euglossini). \textit{J. Exp. Biol.} 207, 2925--2933.
+
+\bibitem[Brand and Chapuisat (2012)]{Brand2012}
+\textbf{Brand, N. and Chapuisat, M.} (2012).
+Born to be bee, fed to be worker? The caste system of a primitively eusocial insect.
+\textit{Frontiers in Zoology} 9(1), 1--9.
+
+\bibitem[Buckner and Danforth (2022)]{Buckner2022}
+\textbf{Buckner, M. A. and Danforth, B. N.} (2022).
+Climate-driven range shifts of a rare specialist bee, \textit{Macropis nuda} (Melittidae), and its host plant, \textit{Lysimachia ciliata} (Primulaceae).
+\textit{Global Ecology and Conservation} 37, e02180.
+
+\bibitem[Burton et~al. (2022)]{Burton2022}
+\textbf{Burton, T., Ratikainen, I. I. and Einum, S.} (2022).
+Environmental change and the rate of phenotypic plasticity.
+\textit{Glob. Change Biol.} 28, 5337--5345.
+
+\bibitem[Cameron et~al.(1996)]{Cameron1996}
+\textbf{Cameron, S. A., Whitfield, J. B., Hulslander, C. L., Cresko, W. A., Isenberg, S. B. and King, R. W.} (1996). Nesting biology and foraging patterns of the solitary bee \textit{Melissodes rustica} (Hymenoptera: Apidae) in northwest Arkansas. \textit{J. Kans. Entomol. Soc.} 69, 260--273.
+
+\bibitem[Cane (1987)]{Cane1987}
+\textbf{Cane, J. H.} (1987). Estimation of bee size using intertegular span (Apoidea). \textit{J. Kans. Entomol. Soc.} 60, 145--147.
+
+\bibitem[Cane and Neff (2011)]{Cane2011}
+\textbf{Cane, J. H. and Neff, J. L.} (2011).
+Predicted fates of ground-nesting bees in soil heated by wildfire: thermal tolerances of life stages and a survey of nesting depths.
+\textit{Biol. Conserv.} 144, 2631--2636.
+
+\bibitem[Cane (2015)]{Cane2015}
+\textbf{Cane, J. H.} (2015).
+Landscaping pebbles attract nesting by the native ground-nesting bee \textit{Halictus rubicundus} (Hymenoptera: Halictidae).
+\textit{Apidologie} 46, 728--734.
+
+\bibitem[Casey et~al. (2015)]{Casey2015}
+\textbf{Casey, L. M., Rebelo, H., Rotheray, E. and Goulson, D.} (2015).
+Evidence for habitat and climatic specializations driving the long-term distribution trends of UK and Irish bumblebees.
+\textit{Diversity and Distributions} 21(8), 864--875.
+
+\bibitem[Corbet et~al.(1993)]{Corbet1993}
+\textbf{Corbet, S. A., Fussell, M., Ake, R., et~al.} (1993).
+Temperature and the pollinating activity of social bees.
+\textit{Ecol. Entomol.} 18(1), 17--30.
+
+\bibitem[Clusella-Trullas et~al.(2011)]{ClusellaTrullas2011}
+\textbf{Clusella-Trullas, S., Blackburn, T. M. and Chown, S. L.} (2011).
+Climatic predictors of temperature performance curve parameters in ectotherms imply complex responses to climate change.
+\textit{Am. Nat.} 177, 738--751.
+
+\bibitem[Crist and Williams (1999)]{Crist1999}
+\textbf{Crist, T. O. and Williams, J. A.} (1999). Simulation of topographic and daily variation in colony activity of \textit{Pogonomyrmex occidentalis} (Hymenoptera: Formicidae) using a soil temperature model. \textit{Environ. Entomol.} 28, 659--668.
+
+\bibitem[Cossins (2012)]{Cossins2012}
+\textbf{Cossins, A.} (2012). \textit{Temperature Biology of Animals}. Springer, Dordrecht.
+
+\bibitem[Danforth et~al.(2003)]{Danforth2003}
+\textbf{Danforth, B. N., Conway, L. and Ji, S.} (2003). Phylogeny of eusocial \textit{Lasioglossum} reveals multiple losses of eusociality within a primitively eusocial clade of bees (Hymenoptera: Halictidae). \textit{Syst. Biol.} 52, 23--36.
+
+\bibitem[David et~al.(1998)]{David1998}
+\textbf{David, R. J., Gibert, P., Pla, E., Petavy, G., Karan, D. and Moreteau, B.} (1998).
+Cold stress tolerance in \textit{Drosophila}: analysis of chill coma recovery in \textit{D. melanogaster}.
+\textit{J. Therm. Biol.} 23, 291--299.
+
+\bibitem[Davis and Shaw (2001)]{Davis2001}
+\textbf{Davis, M. B. and Shaw, R. G.} (2001).
+Range shifts and adaptive responses to Quaternary climate change.
+\textit{Science} 292(5517), 673--679.
+
+\bibitem[Davis et~al.(2019)]{Davis2019}
+\textbf{Davis, F. W., Synes, N. W., Fricker, G. A., McCullough, I. M., Serra-Diaz, J. M. and Franklin, J. et~al.} (2019).
+LiDAR-derived topography and forest structure predict fine-scale variation in daily surface temperatures in oak savanna and conifer forest landscapes.
+\textit{Agric. For. Meteorol.} 269--270, 192--202.
+
+\bibitem[Deutsch et~al.(2008)]{Deutsch2008}
+\textbf{Deutsch, C. A., Tewksbury, J. J., Huey, R. B., Sheldon, K. S., Ghalambor, C. K., Haak, D. C. et~al.} (2008).
+Impacts of climate warming on terrestrial ectotherms across latitude.
+\textit{Proc. Natl Acad. Sci. USA} 105, 6668--6672.
+
+\bibitem[Dobzhansky (1950)]{Dobzhansky1950}
+\textbf{Dobzhansky, T.} (1950).
+Evolution in the tropics.
+\textit{Am. Sci.} 38, 209--221.
+
+\bibitem[Dunham (1993)]{Dunham1993}
+\textbf{Dunham, A. E.} (1993).
+Biotic interactions and global change.
+In: Kareiva, P. M., Kingsolver, J. G. and Huey, R. B. (eds), \textit{Biotic Interactions and Global Change}.
+Sinauer Associates, Sunderland, MA, pp. 95--119.
+
+\bibitem[Dunn and Richards (2003)]{Dunn2003}
+\textbf{Dunn, T. and Richards, M. H.} (2003). When to bee social: interactions among environmental constraints, incentives, guarding, and relatedness in a facultatively social carpenter bee. \textit{Behav. Ecol.} 14, 417--424.
+
+\bibitem[Eickwort et~al.(1996)]{Eickwort1996}
+\textbf{Eickwort, G. C., Eickwort, J. M., Gordon, J., Eickwort, M. A. and Wcislo, W. T.} (1996). Solitary behavior in a high-altitude population of the social sweat bee \textit{Halictus rubicundus} (Hymenoptera: Halictidae). \textit{Behav. Ecol. Sociobiol.} 38, 227--233.
+
+\bibitem[Eliopoulos and Stathas (2003)]{Eliopoulos2003}
+\textbf{Eliopoulos, P. A. and Stathas, G. J.} (2003). Temperature-dependent development of the koinobiont endoparasitoid \textit{Venturia canescens} (Gravenhorst) (Hymenoptera: Ichneumonidae): effect of host instar. \textit{Environ. Entomol.} 32, 1049--1055.
+
+\bibitem[Fawcett et~al.(2019)]{Fawcett2019}
+\textbf{Fawcett, F. V. E., Minckley, R. L. and Neff, J. L.} (2019).
+\textit{The Solitary Bees: Biology, Evolution, Conservation}.
+Princeton University Press.
+
+\bibitem[Forrest and Miller-Rushing (2010)]{Forrest2010}
+\textbf{Forrest, J. and Miller-Rushing, A. J.} (2010).
+Toward a synthetic understanding of the role of phenology in ecology and evolution.
+\textit{Philos. Trans. R. Soc. B} 365, 3101--3112.
+
+\bibitem[Forrest and Chisholm (2017)]{Forrest2017}
+\textbf{Forrest, J. R. K. and Chisholm, S. P. M.} (2017).
+Direct benefits and indirect costs of warm temperatures for high-elevation populations of a solitary bee.
+\textit{Ecology} 98, 359--369.
+
+\bibitem[Forrest et~al.(2019)]{Forrest2019}
+\textbf{Forrest, J. R. K., Cross, R. and CaraDonna, P. J.} (2019).
+Two-year bee, or not two-year bee? How voltinism is affected by temperature and season length in a high-elevation solitary bee.
+\textit{Am. Nat.} 193, 560--574.
+
+\bibitem[Gilbert and Raworth(1996)]{Gilbert1996}
+\textbf{Gilbert, N. and Raworth, D. A.} (1996). Insects and temperature—a general theory. \textit{Can. Entomol.} 128, 1--13.
+
+\bibitem[Gil-Tapetado et~al. (2024)]{Gil2024}
+\textbf{Gil-Tapetado, D., Ferrari, A., Ronchetti, F., Polidori, C. and others} (2024).
+Distribution widening of a ground-nesting social bee across Europe favored by climate change and urban setting.
+\textit{Apidologie} 55, 1--20.
+
+\bibitem[Gogala (1991)]{Gogala1991}
+\textbf{Gogala, A.} (1991).
+Initiation of new nests in a social bee, \textit{Halictus scabiosae} Rossi (Hymenoptera: Halictidae).
+\textit{Opusc. Zool. Flumin.} 67, 1--7.
+
+\bibitem[González et~al. (2018)]{Gonzalez2018}
+\textbf{González, V. H., Patton, R., Plascencia, M., Girişgin, A. O., Çakmak, I. et~al.} (2018).
+High levels of tolerance between nestmates and non-nestmates in the primitively eusocial sweat bee \textit{Halictus scabiosae} (Rossi) in Turkey (Hymenoptera: Halictidae).
+\textit{Insectes Sociaux} 65, 339--343.
+
+\bibitem[Gonzalez et~al.(2020)]{Gonzalez2020a}
+\textbf{Gonzalez, V. H., Osborn, A. L., Brown, E. R., Pavlick, C. R., Enríquez, E., Tscheulin, T., Petanidou, T., Hranitz, J. M. and Barthell, J. F.} (2020). Effect of pan trap size on the diversity of sampled bees and abundance of bycatch. \textit{J. Insect Conserv.} 24, 409--420.
+
+\bibitem[Gonz\'{a}lez-Tokman et~al.(2020)]{gonzalez2020insect}
+\textbf{Gonz\'{a}lez-Tokman, D., C\'{o}rdoba-Aguilar, A., D\'{a}ttilo, W., Lira-Noriega, A., S\'{a}nchez-Guill\'{e}n, R. A. and Villalobos, F.} (2020).
+Insect responses to heat: physiological mechanisms, evolution and ecological implications in a warming world.
+\textit{Biol. Rev.} 95, 802--821.
+
+\bibitem[Gonzalez et~al.(2024)]{Gonzalez2024}
+\textbf{Gonzalez, V. H., Herbison, N., Robles-Pérez, G., Panganiban, T., Haefner, L., Tscheulin, T., Petanidou, T. and Hranitz, J.} (2024). Bees display limited acclimation capacity for heat tolerance. \textit{Biol. Open} 13, bio060179.
+
+\bibitem[Gonzalez et~al.(2024a)]{Gonzalez2024a}
+\textbf{Gonzalez, V. H., Rancher, W., Vigil, R., Garino-Heisey, I., Oyen, K., Tscheulin, T., Petanidou, T., Hranitz, J. M. and Barthell, J. F.} (2024). Bees remain heat tolerant after acute exposure to desiccation and starvation. \textit{J. Exp. Biol.} 227, jeb249216.
+
+\bibitem[Gould (1978)]{Gould1978}
+\textbf{Gould, S. J.} (1978). \textit{Ever Since Darwin: Reflections in Natural History}. Burnett, London.
+
+\bibitem[Grafton-Cardwell et~al.(2005)]{Grafton2005}
+\textbf{Grafton-Cardwell, E. E., Gu, P. and Montez, G. H.} (2005). Effects of temperature on development of vedalia beetle, \textit{Rodolia cardinalis} (Mulsant). \textit{Biol. Control} 32, 473--478.
+
+\bibitem[Gregory and Wright (2005)]{Gregory2005}
+\textbf{Gregory, S. and Wright, I.} (2005).
+Creation of patches of bare ground to enhance the habitat of ground-nesting bees and wasps at Shotover Hill, Oxfordshire, England.
+\textit{Conserv. Evid.} 2, 139--141.
+
+\bibitem[Harmon-Threatt (2020)]{Harmon2020}
+\textbf{Harmon-Threatt, A.} (2020).
+Influence of nesting characteristics on health of wild bee communities.
+\textit{Annu. Rev. Entomol.} 65, 39--56.
+
+\bibitem[Helmuth et~al.(2005)]{Helmuth2005}
+\textbf{Helmuth, B., Kingsolver, J. G. and Carrington, E.} (2005).
+Biophysics, physiological ecology, and climate change: Does mechanism matter?
+\textit{Annu. Rev. Physiol.} 67, 177--201.
+
+\bibitem[Hirata et~al.(2005)]{Hirata2005}
+\textbf{Hirata, M., Cronin, A. L., Kidokoro, M. and Azuma, N.} (2005). Spatio-temporal variation of colony structure and eusociality level of the Japanese sweat bee \textit{Lasioglossum (Evylaeus) duplex} (Hymenoptera: Halictidae). \textit{Ecol. Res.} 20, 75--79.
+
+\bibitem[Hoffmann et~al.(2002)]{Hoffmann2002}
+\textbf{Hoffmann, W. A., Schroeder, W. and Jackson, R. B.} (2002).
+Positive feedbacks of fire, climate and vegetation and the conversion of tropical savanna.
+\textit{Geophys. Res. Lett.} 29, 2052.
+
+\bibitem[Hoffmann et~al.(2013)]{Hoffmann2013}
+\textbf{Hoffmann, A. A., Chown, S. L. and Clusella-Trullas, S.} (2013).
+Upper thermal limits in terrestrial ectotherms: how constrained are they?
+\textit{Funct. Ecol.} doi:10.1111/j.1365-2435.2012.02036.x.
+
+\bibitem[Houston et~al.(1993)]{Houston1993}
+\textbf{Houston, A. I., McNamara, J. M. and Hutchinson, J. M. C.} (1993).
+General results concerning the trade-off between gaining energy and avoiding predation.
+\textit{Philos. Trans. R. Soc. Lond. B} 341, 375--397.
+
+\bibitem[Howe (1967)]{Howe1967}
+\textbf{Howe, R. W.} (1967). Temperature effects on embryonic development in insects. \textit{Annu. Rev. Entomol.} 12, 15--42.
+
+\bibitem[Huang et~al. (2022)]{Huang2022}
+\textbf{Huang, M. J., Hughes, A. C., Xu, C. Y., Miao, B. G., Gao, J. et~al.} (2022).
+Mapping the changing distribution of two important pollinating giant honeybees across 21,000 years.
+\textit{Global Ecology and Conservation} 39, e02282.
+
+\bibitem[Huey et~al.(2003)]{Huey2003}
+\textbf{Huey, R. B., Hertz, P. E. and Sinervo, B.} (2003).
+Behavioral drive versus behavioral inertia in evolution: a null model approach.
+\textit{Am. Nat.} 161, 357--366.
+
+\bibitem[Huey et~al.(2009)]{Huey2009}
+\textbf{Huey, R. B., Deutsch, C. A., Tewksbury, J. J., Vitt, L. J., Hertz, P. E., Alvarez Perez, H. J. et~al.} (2009).
+Why tropical forest lizards are vulnerable to climate warming.
+\textit{Proc. Biol. Sci.} 276, 1939--1948.
+
+\bibitem[Huey and Stevenson (1979)]{HueyStevenson1979}
+\textbf{Huey, R. B. and Stevenson, R. D.} (1979).
+Integrating thermal physiology and ecology of ectotherms: A discussion of approaches.
+\textit{Am. Zool.} 19, 357--366.
+
+\bibitem[Jackson and Overpeck (2000)]{Jackson2000}
+\textbf{Jackson, S. T. and Overpeck, J. T.} (2000).
+Responses of plant populations and communities to environmental changes of the late Quaternary.
+\textit{Paleobiology} 26, 194--220.
+
+\bibitem[Jeanne and Morgan (1992)]{Jeanne1992}
+\textbf{Jeanne, R. L. and Morgan, R. C.} (1992).
+The influence of temperature on nest site choice and reproductive strategy in a temperate zone \textit{Polistes} wasp.
+\textit{Ecol. Entomol.} 17, 135--141.
+
+\bibitem[Johansson et~al. (2016)]{Johansson2016}
+\textbf{Johansson, M. P., Quintela, M. and Laurila, A.} (2016).
+Genetic divergence and isolation by thermal environment in geothermal populations of an aquatic invertebrate.
+\textit{J. Evol. Biol.} 29, 1701--1712.
+
+\bibitem[Jones and Oldroyd (2006)]{Jones2006}
+\textbf{Jones, J. C. and Oldroyd, B. P.} (2006).
+Nest thermoregulation in social insects.
+\textit{Adv. Insect Physiol.} 33, 153--191.
+
+\bibitem[Kamm (1974)]{Kamm1974}
+\textbf{Kamm, D. R.} (1974). Effects of temperature, day length, and number of adults on the sizes of cells and offspring in a primitively social bee (Hymenoptera: Halictidae). \textit{J. Kans. Entomol. Soc.} 47, 8--18.
+
+\bibitem[Kearney et~al.(2009)]{Kearney2009}
+\textbf{Kearney, M., Shine, R. and Porter, W. P.} (2009).
+The potential for behavioral thermoregulation to buffer “cold-blooded” animals against climate warming.
+\textit{Proc. Natl Acad. Sci. USA} 106, 3835--3840.
+
+\bibitem[Kearney et~al.(2013)]{Kearney2013}
+\textbf{Kearney, M. R., Simpson, S. J., Raubenheimer, D. and Kooijman, S. A. L. M.} (2013).
+Balancing heat, water and nutrients under environmental change: a thermodynamic framework.
+\textit{Funct. Ecol.} doi:10.1111/1365-2435.12020.
+
+\bibitem[Kerr et~al. (2015)]{Kerr2015}
+\textbf{Kerr, J. T., Pindar, A., Galpern, P., Packer, L., Potts, S. G. et~al.} (2015).
+Climate change impacts on bumblebees converge across continents.
+\textit{Science} 349(6244), 177--180.
+
+\bibitem[Kingsolver and Huey (1998)]{Kingsolver1998}
+\textbf{Kingsolver, J. G. and Huey, R. B.} (1998).
+Evolutionary analyses of morphological and physiological plasticity in thermally variable environments.
+\textit{Am. Zool.} 38, 545--560.
+
+\bibitem[Kingsolver and Huey (2008)]{Kingsolver2008}
+\textbf{Kingsolver, J. G. and Huey, R. B.} (2008).
+Size, temperature, and fitness: three rules.
+\textit{Evol. Ecol. Res.} 10, 251--268.
+
+\bibitem[Knerer (1967)]{Knerer1967}
+\textbf{Knerer, G.} (1967).
+Zur Bienenfauna Niederösterreichs: die Unterfamilie Halictinae.
+\textit{Zool. Anz.} 181, 82--117.
+
+\bibitem[Knerer (1969)]{Knerer1969}
+\textbf{Knerer, G.} (1969).
+Synergistic evolution of halictine nest architecture and social behavior.
+\textit{Can. J. Zool.} 47, 925--930.
+
+\bibitem[Knerer (1980)]{Knerer1980}
+\textbf{Knerer, G.} (1980).
+Biology and social behaviour of bees of the genus \textit{Halictus} Latreille (Hymenoptera: Halictidae).
+\textit{Zool. Jahrb. Syst.} 107, 511--536.
+
+\bibitem[Knerer (1992)]{Knerer1992}
+\textbf{Knerer, G.} (1992). The biology and social behaviour of \textit{Evylaeus malachurus} (K.) (Hymenoptera: Halictidae) in different climatic regions of Europe.
+
+\bibitem[Knerer and Plateaux-Quénu (1967)]{KnererPlateaux1967}
+\textbf{Knerer, G. and Plateaux-Quénu, C.} (1967).
+Usurpation de nids étrangers et parasitisme facultatif chez \textit{Halictus scabiosae} (Rossi) (Insecte Hyménoptère).
+\textit{Insectes Soc.} 14(1), 47--50.
+
+\bibitem[Kukuk (2002)]{Kukuk2002}
+\textbf{Kukuk, P. F.} (2002). Nest reuse in a communal halictine bee, \textit{Lasioglossum (Chilalictus) hemichalceum} (Hymenoptera: Halictidae). \textit{J. Kans. Entomol. Soc.} 75, 3--7.
+
+\bibitem[Lanner et~al. (2022)]{Lanner2022}
+\textbf{Lanner, J., Dubos, N., Geslin, B., Leroy, B., Hernández-Castellano, C. et~al.} (2022).
+On the road: anthropogenic factors drive the invasion risk of a wild solitary bee species.
+\textit{Science of the Total Environment} 827, 154246.
+
+\bibitem[Larsson (1991)]{Larsson1991}
+\textbf{Larsson, F. K.} (1991).
+Some take it cool, some like it hot: a comparative study of male mate searching tactics in two species of Hymenoptera (Colletidae and Sphecidae).
+\textit{J. Therm. Biol.} 16, 45--51.
+
+\bibitem[Lienhard et~al.(2010)]{Lienhard2010}
+\textbf{Lienhard, A., Mirwald, L., H\"otzl, T., Kranner, I. and Kastberger, G.} (2010). Trade-off between foraging activity and infestation by nest parasites in the primitively eusocial bee \textit{Halictus scabiosae}. \textit{Psyche} 2010, 707501.
+
+\bibitem[Legewie (1925)]{Legewie1925}
+\textbf{Legewie, H.} (1925). Zur Theorie der Staatenbildung. I. Teil: Die Biologie der Furchenbiene \textit{Halictus malachurus} K. \textit{Z. Morphol. Okol. Tiere} 5, 619--684.
+
+\bibitem[Lomolino et~al. (2017)]{Lomolino2017}
+\textbf{Lomolino, M. V., Riddle, B. R. and Whittaker, R. J.} (2017).
+\textit{Biogeography}. Oxford University Press, Oxford.
+
+\bibitem[Marshall et~al.(1996)]{Marshall1996}
+\textbf{Marshall, T. J., Holmes, J. W. and Rose, C. W.} (1996).
+\textit{Soil Physics}, 3rd edn.
+Cambridge University Press, Cambridge, UK.
+
+\bibitem[Martínez-López et~al. (2021)]{MartinezLopez2021}
+\textbf{Martínez-López, O., Koch, J. B., Martínez-Morales, M. A., Navarrete-Gutiérrez, D., Enríquez, E. and Vandame, R.} (2021).
+Reduction in the potential distribution of bumble bees (Apidae: \textit{Bombus}) in Mesoamerica under different climate change scenarios: conservation implications.
+\textit{Global Change Biology} 27(9), 1772--1787. https://doi.org/10.1111/gcb.15559
+
+\bibitem[Melville and Schulte (2001)]{Melville2001}
+\textbf{Melville, J. and Schulte II, J. A.} (2001). Correlates of active body temperatures and microhabitat occupation in nine species of central Australian agamid lizards. \textit{Austral Ecol.} 26, 660--669.
+
+\bibitem[Michener (1979)]{Michener1979}
+\textbf{Michener, C. D.} (1979). Biogeography of the bees. \textit{Ann. Missouri Bot. Gard.} 66, 277--347.
+
+\bibitem[Michener (2007)]{Michener2007}
+\textbf{Michener, C. D.} (2007).
+\textit{The Bees of the World}.
+Johns Hopkins University Press.
+
+\bibitem[Mikola et~al.(2018)]{Mikola2018}
+\textbf{Mikola, J., Virtanen, T., Linkosalmi, M., V{\"a}h{\"a}, E., Nyman, J., Postanogova, O. et~al.} (2018).
+Spatial variation and linkages of soil and vegetation in the Siberian Arctic tundra--coupling field observations with remote sensing data.
+\textit{Biogeosciences} 15, 2781--2801.
+
+\bibitem[Minchella (1985)]{Minchella1985}
+\textbf{Minchella, D. J.} (1985).
+Host life-history variation in response to parasitism.
+\textit{Parasitology} 90(1), 205--216.
+
+\bibitem[Miyanaga et~al.(1999)]{Miyanaga1999}
+\textbf{Miyanaga, R., Maeta, Y. and Sakagami, S. F.} (1999). Geographical variation of sociality and size-linked color patterns in \textit{Lasioglossum (Evylaeus) apristum} (Vachal) in Japan (Hymenoptera: Halictidae). \textit{Insectes Soc.} 46, 224--232.
+
+\bibitem[Nemésio et~al. (2016)]{Nemesio2016}
+\textbf{Nemésio, A., Silva, D. P., Nabout, J. C. and Varela, S.} (2016).
+Effects of climate change and habitat loss on a forest-dependent bee species in a tropical fragmented landscape.
+\textit{Insect Conservation and Diversity} 9(2), 149--160.
+
+\bibitem[Noll (1931)]{Noll1931}
+\textbf{Noll, J.} (1931). Untersuchungen über die Zeugung und Staatenbildung des \textit{Halictus malachurus} Kirby. \textit{Z. Morphol. Okol. Tiere} 23, 285--368.
+
+\bibitem[Oyen et~al.(2021)]{Oyen2021}
+\textbf{Oyen, K. J., Jardine, L. E., Parsons, Z. M., Herndon, J. D., Strange, J. P., Lozier, J. D. and Dillon, M. E.} (2021).
+Body mass and sex, not local climate, drive differences in chill coma recovery times in common garden reared bumble bees.
+\textit{J. Comp. Physiol. B} 191, 843--854.
+
+\bibitem[Packer and Knerer (1985)]{Packer1985}
+\textbf{Packer, L. and Knerer, G.} (1985). Social evolution and its correlates in bees of the subgenus \textit{Evylaeus} (Hymenoptera; Halictidae). \textit{Behav. Ecol. Sociobiol.} 17, 143--149.
+
+\bibitem[Packer (1986)]{Packer1986a}
+\textbf{Packer, L.} (1986). Multiple-foundress associations in a temperate population of \textit{Halictus ligatus} (Hymenoptera; Halictidae). \textit{Can. J. Zool.} 64, 2325--2332.
+
+\bibitem[Packer and Knerer (1986b)]{Packer1986b}
+\textbf{Packer, L. and Knerer, G.} (1986b).
+The biology of a subtropical population of \textit{Halictus ligatus} Say (Hymenoptera: Halictidae).
+\textit{Behav. Ecol. Sociobiol.} 18, 363--375.
+
+\bibitem[Packer et~al.(1989)]{Packer1989}
+\textbf{Packer, L., Sampson, B., Lockerbie, C. and Jessome, V.} (1989).
+Nest architecture and brood mortality in four species of sweat bee (Hymenoptera: Halictidae) from Cape Breton Island, Nova Scotia, Canada.
+\textit{Can. J. Zool.} 67, 2864--2870.
+
+\bibitem[Packer(1998)]{Packer1998}
+\textbf{Packer, L.} (1998). A phylogenetic analysis of western European species of the \textit{Lasioglossum leucozonium} species-group (Hymenoptera: Halictidae): sociobiological and taxonomic implications. \textit{Can. J. Zool.} 76, 1611--1621.
+
+\bibitem[Pauly et~al. (2016)]{Pauly2016}
+\textbf{Pauly, A., Pesenko, Y. and Radchenko, V.} (2016).
+Les \textit{Halictus} Latreille, 1804 d’Europe et du Bassin Méditerranéen. Atlas Hymenoptera.
+Available at: http://www.atlashymenoptera.net/page.aspx?id=70
+
+\bibitem[Paxton et~al.(1999)]{Paxton1999}
+\textbf{Paxton, R. J., Kukuk, P. F. and Teng{\"o}, J.} (1999).
+Effects of familiarity and nestmate number on social interactions in two communal bees, \textit{Andrena scotica} and \textit{Panurgus calcaratus} (Hymenoptera: Andrenidae).
+\textit{Insectes Soc.} 46, 109--118.
+
+\bibitem[Plateaux-Quénu (1993)]{Plateaux1993}
+\textbf{Plateaux-Quénu, C.} (1993). Modalités de la socialisation chez les Halictinae (Hymenoptera, Halictidae). I: Biologie des Halictinae. \textit{L’Année Biologique} 32, 183--204.
+
+\bibitem[Plateaux-Quénu et~al.(2000)]{Plateaux2000}
+\textbf{Plateaux-Quénu, C., Plateaux, L. and Packer, L.} (2000). Population-typical behaviours are retained when eusocial and non-eusocial forms of \textit{Evylaeus albipes} (F.) (Hymenoptera: Halictidae) are reared simultaneously in the laboratory. \textit{Insectes Soc.} 47, 263--270.
+
+\bibitem[Plateaux-Quénu (2008)]{Plateaux2008}
+\textbf{Plateaux-Quénu, C.} (2008).
+Subsociality in halictine bees.
+\textit{Insectes Soc.} 55, 335--346.
+
+\bibitem[Polidori et~al.(2010)]{Polidori2010}
+\textbf{Polidori, C., Rubichi, A., Barbieri, V., Trombino, L. and Donegana, M.} (2010). Floral resources and nesting requirements of the ground-nesting social bee, \textit{Lasioglossum malachurum} (Hymenoptera: Halictidae), in a Mediterranean semiagricultural landscape. \textit{Psyche} 2010, 851947.
+
+\bibitem[Polidori et~al. (2021)]{Polidori2021}
+\textbf{Polidori, C., García-Gila, J., Blasco-Aróstegui, J. and Gil-Tapetado, D.} (2021).
+Urban areas are favouring the spread of an alien mud-dauber wasp into climatically non-optimal latitudes.
+\textit{Acta Oecologica} 110, 103678.
+
+\bibitem[Porter (1988)]{Porter1988}
+\textbf{Porter, S. D.} (1988). Impact of temperature on colony growth and developmental rates of the ant \textit{Solenopsis invicta}. \textit{J. Insect Physiol.} 34, 1127--1133.
+
+\bibitem[Potts and Willmer(1997)]{Potts1997}
+\textbf{Potts, S. and Willmer, P. A. T.} (1997). Abiotic and biotic factors influencing nest-site selection by \textit{Halictus rubicundus}, a ground-nesting halictine bee. \textit{Ecol. Entomol.} 22, 319--328.
+
+\bibitem[Potts et~al.(2016)]{Potts2016}
+\textbf{Potts, S. G., Imperatriz-Fonseca, V., Ngo, H. T., Aizen, M. A., Biesmeijer, J. C., Breeze, T. D., Dicks, L. V., Garibaldi, L. A., Hill, R. and Settele, J.} (2016).
+Safeguarding pollinators and their values to human well-being.
+\textit{Nature} 540, 220--229.
+
+\bibitem[Rajver et~al.(2006)]{Rajver2006}
+\textbf{Rajver, D., {\v S}afanda, J. and Dede{\v c}ek, P.} (2006).
+Monitoring of air--ground temperature coupling and examples of shallow subsurface warming in Slovenia.
+\textit{Geologija} 49, 279--293.
+
+\bibitem[Redding et~al.(2003)]{Redding2003}
+\textbf{Redding, T. E., Hope, G. D., Fortin, M. J., Schmidt, M. G. and Bailey, W. G.} (2003).
+Spatial patterns of soil temperature and moisture across subalpine forest--clearcut edges in the southern interior of British Columbia.
+\textit{Can. J. Soil Sci.} 83, 121--130.
+
+\bibitem[Richards (1953)]{Richards1953}
+\textbf{Richards, O. W.} (1953).
+\textit{The Social Insects}.
+MacDonald, London.
+
+\bibitem[Richards (2000)]{Richards2000}
+\textbf{Richards, M. H.} (2000). Evidence for geographic variation in colony social organization in an obligately social sweat bee, \textit{Lasioglossum malachurum} Kirby (Hymenoptera; Halictidae). \textit{Can. J. Zool.} 78, 1259--1266.
+
+\bibitem[Richards et~al.(2003)]{Richards2003}
+\textbf{Richards, M. H., von Wettberg, E. J. and Rutgers, A. C.} (2003). A novel social polymorphism in a primitively eusocial bee. \textit{Proc. Natl. Acad. Sci. USA} 100, 7175--7180.
+
+\bibitem[Ricklefs (2006)]{Ricklefs2006}
+\textbf{Ricklefs, R. E.} (2006).
+Evolutionary diversification and the origin of the diversity--environment relationship.
+\textit{Ecology} 87, S3--S13.
+
+\bibitem[Rodrigues and Beldade(2020)]{rodrigues2020thermal}
+\textbf{Rodrigues, Y. K. and Beldade, P.} (2020).
+Thermal plasticity in insects' response to climate change and to multifactorial environments.
+\textit{Front. Ecol. Evol.} 8, 271.
+
+\bibitem[Roubik and Michener (1980)]{Roubik1980}
+\textbf{Roubik, D. W. and Michener, C. D.} (1980).
+The seasonal cycle and nests of \textit{Epicharis zonata}, a bee whose cells are below the wet-season water table (Hymenoptera: Anthophoridae).
+\textit{Biotropica} 12, 56--60.
+
+\bibitem[Sakagami and Hayashida (1961)]{Sakagami1961}
+\textbf{Sakagami, S. F. and Hayashida, K.} (1961).
+Biology of the primitive social bee, \textit{Halictus duplex} Dalla Torre, III: activities in spring solitary phase.
+\textit{J. Fac. Sci. Hokkaido Univ. Ser. VI Zool.} 14, 639--682.
+
+\bibitem[Schneider et~al.(2012)]{Schneider2012}
+\textbf{Schneider, C. A., Rasband, W. S. and Eliceiri, K. W.} (2012). NIH Image to ImageJ: 25 years of image analysis. \textit{Nat. Methods} 9, 671--675.
+
+\bibitem[Schwarz et~al.(2007)]{Schwarz2007}
+\textbf{Schwarz, M. P., Richards, M. H. and Danforth, B. N.} (2007). Changing paradigms in insect social evolution: insights from halictine and allodapine bees. \textit{Annu. Rev. Entomol.} 52, 127--150.
+
+\bibitem[Shebl (2012)]{Shebl2012}
+\textbf{Shebl, M.} (2012). The floral hosts of Japanese polylectic sweat bees of subgenus \textit{Lasioglossum (Lasioglossum)} (Hymenoptera: Halictidae). \textit{J. Apic. Res.} 51, 232--239.
+
+\bibitem[Shebl et~al.(2016)]{Shebl2016}
+\textbf{Shebl, M. A., Al Aser, R. M. and Ibrahim, A.} (2016).
+Nesting biology and seasonality of long-horned bee \textit{Eucera nigrilabris} Lepeletier (Hymenoptera: Apidae).
+\textit{Sociobiology} 63, 1031--1037.
+
+\bibitem[Sick et~al.(1994)]{Sick1994}
+\textbf{Sick, M., Ayasse, M., Teng{\"o}, J., Engels, W., L{\"u}bke, G. and Francke, W.} (1994).
+Host-parasite relationships in six species of \textit{Sphecodes} bees and their halictid hosts: nest intrusion, intranidal behavior, and Dufour's gland volatiles (Hymenoptera: Halictidae).
+\textit{J. Insect Behav.} 7, 101--117.
+
+\bibitem[Sih and McCarthy (2002)]{Sih2002}
+\textbf{Sih, A. and McCarthy, T. M.} (2002).
+Prey responses to pulses of risk and safety: testing the risk allocation hypothesis.
+\textit{Anim. Behav.} 63, 437--444.
+
+\bibitem[Severns (2004)]{Severns2004}
+\textbf{Severns, P. M.} (2004).
+Creating bare ground increases presence of native pollinators in Kincaid’s lupine seeding plots.
+\textit{Ecol. Restor.} 22, 234--235.
+
+\bibitem[Soucy(2002)]{Soucy2002}
+\textbf{Soucy, S. L.} (2002). Nesting biology and socially polymorphic behavior of the sweat bee \textit{Halictus rubicundus} (Hymenoptera: Halictidae). \textit{Ann. Entomol. Soc. Am.} 95, 57--65.
+
+\bibitem[Stone (1994)]{Stone1994}
+\textbf{Stone, G. N.} (1994).
+Activity patterns of females of the solitary bee \textit{Anthophora plumipes} in relation to temperature, nectar supplies and body size.
+\textit{Ecol. Entomol.} 19, 177--189.
+
+\bibitem[Stearns (1976)]{Stearns1976}
+\textbf{Stearns, S. C.} (1976).
+Life-history tactics: a review of the ideas.
+\textit{Q. Rev. Biol.} 51, 3--47.
+
+\bibitem[Stollewerk et~al.(2025)]{stollewerk2025plasticity}
+\textbf{Stollewerk, A., Kratina, P., Sentis, A., Chaparro-Pedraza, C., Decaestecker, E., De Meester, L., Eyice, O., Govaert, L., Jones, J. I., Laforsch, C. et al.} (2025).
+Plasticity in climate change responses.
+\textit{Biol. Rev.} 100, 2508--2527.
+
+\bibitem[Strohm and Linsenmair(1998)]{Strohm1998}
+\textbf{Strohm, E. and Linsenmair, K.} (1998). Temperature dependence of provisioning behaviour and investment allocation in the European beewolf \textit{Philanthus triangulum} F. \textit{Ecol. Entomol.} 23, 330--339.
+
+\bibitem[Tattersall et~al. (2012)]{Tattersall2012}
+\textbf{Tattersall, G. J., Sinclair, B. J., Withers, P. C., Fields, P. A., Seebacher, F., Cooper, C. E. and Maloney, S. K.} (2012).
+Coping with thermal challenges: physiological adaptations to environmental temperatures.
+\textit{Compr. Physiol.} 2, 2151--2202.
+
+\bibitem[Truebano et~al.(2018)]{Truebano2018}
+\textbf{Truebano, M., Fenner, P., Tills, O., Rundle, S. D. and Rezende, E. L.} (2018). Thermal strategies vary with life history stage. \textit{J. Exp. Biol.} 221, jeb171629.
+
+\bibitem[Vandame et~al.(2002)]{Vandame2002}
+\textbf{Vandame, R., Morand, S., Colin, M. and Belzunces, L.} (2002).
+Parasitism in the social bee \textit{Apis mellifera}: quantifying costs and benefits of behavioral resistance to \textit{Varroa destructor} mites.
+\textit{Apidologie} 33(5), 433--445.
+
+\bibitem[Vogt et~al.(2003)]{Vogt2003}
+\textbf{Vogt, J. T., Smith, W. A., Grantham, R. A. and Wright, R. E.} (2003). Effects of temperature and season on foraging activity of red imported fire ants (Hymenoptera: Formicidae) in Oklahoma. \textit{Environ. Entomol.} 32, 447--451.
+
+\bibitem[Wcislo and Cane (1996)]{Wcislo1996}
+\textbf{Wcislo, W. T. and Cane, J. H.} (1996).
+Floral resource utilization by solitary bees (Hymenoptera: Apoidea) and exploitation of their stored foods by natural enemies.
+\textit{Annu. Rev. Entomol.} 41, 257--286.
+
+\bibitem[Weissel et~al.(2006)]{Weissel2006}
+\textbf{Weissel, N., Mitesser, O., Liebig, J., Poethke, H.-J. and Strohm, E.} (2006). The influence of soil temperature on the nesting cycle of the halictid bee \textit{Lasioglossum malachurum}. \textit{Insectes Soc.} 53, 390--398.
+
+\bibitem[Wesserling and Tscharntke (1995)]{Wesserling1995}
+\textbf{Wesserling, J. and Tscharntke, T.} (1995).
+Habitat selection of bees and digger wasps: experimental management of plots.
+\textit{Commun. Ger. Soc. Gen. Appl. Entomol.} 9, 697--701.
+
+\bibitem[West (1952)]{West1952}
+\textbf{West, E. S.} (1952).
+A study of the annual soil temperature wave.
+\textit{Aust. J. Sci. Res.} 5, 303--314.
+
+\bibitem[Willmer and Stone (2004)]{Willmer2004}
+\textbf{Willmer, P. G. and Stone, G. N.} (2004).
+Behavioural, ecological, and physiological determinants of the activity patterns of bees.
+\textit{Adv. Study Behav.} 34, 347--466.
+
+\bibitem[Whitfield and Richards (1992)]{Whitfield1992}
+\textbf{Whitfield, G. H. and Richards, K. W.} (1992). Temperature-dependent development and survival of immature stages of the alfalfa leafcutter bee \textit{Megachile rotundata} (Hymenoptera: Megachilidae). \textit{Apidologie} 23, 11--23.
+
+\bibitem[Woods et~al.(2005)]{Woods2005}
+\textbf{Woods, W. A., Heinrich, B. and Stevenson, R. D.} (2005). Honeybee flight metabolic rate: does it depend upon air temperature? \textit{J. Exp. Biol.} 208, 1161--1173.
+
+\bibitem[Wuellner and Jang (1996)]{Wuellner1996}
+\textbf{Wuellner, C. T. and Jang, Y.} (1996).
+Natural history of a ground-nesting solitary bee, \textit{Crawfordapis luctuosa} (Hymenoptera: Colletidae).
+\textit{J. Kans. Entomol. Soc.} 69, 211--221.
+
+\bibitem[Wuellner (1999)]{Wuellner1999}
+\textbf{Wuellner, C. T.} (1999).
+Nest site preference and success in a gregarious, ground-nesting bee \textit{Dieunomia triangulifera}.
+\textit{Ecol. Entomol.} 24, 471--479.
+
+\bibitem[Xu et~al.(1997)]{Xu1997}
+\textbf{Xu, M., Chen, J. and Brookshire, B. L.} (1997).
+Temperature and its variability in oak forests in the southeastern Missouri Ozarks.
+\textit{Clim. Res.} 8, 209--223.
+
+\bibitem[Yanega(1988)]{Yanega1988}
+\textbf{Yanega, D.} (1988). Social plasticity and early-diapausing females in a primitively social bee. \textit{Proc. Natl. Acad. Sci. USA} 85, 4374--4377.
+
+\bibitem[Yanega(1997)]{Yanega1997}
+\textbf{Yanega, D.} (1997). Demography and sociality in halictine bees (Hymenoptera: Halictidae). In: \textit{The Evolution of Social Behavior in Insects and Arachnids}, p. 293. Cambridge University Press.
+
+\end{thebibliography}
+
+\clearpage
+
+%\section{Supplementary Information}
+
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{0}
+
+% 1
+
+\begin{table*}[!htbp]
+\centering
+\begingroup
+\fontsize{9}{11}\selectfont
+
+\caption{Daily climatological summary for 15--24 April 2026 (Molyvos, Lesvos; 290~m above sea level). Mean air temperature ($T_{\mathrm{mean}}$) over the period was 14.63\,$^\circ$C, and mean relative humidity (RH; calculated as the mean of daily maximum and minimum values) was 67.9\%. Total rainfall was 17.4\,mm, recorded on 15, 22, and 23 April; maximum daily rainfall was 10.6\,mm (22 April). Data source: Meteo Aegean meteorological database (\url{http://meteo.aegean.gr}).}
+\label{tab:supp_climate_apr15_24}
+
+\setlength{\tabcolsep}{4pt}
+
+\begin{tabular}{ccccccccc}
+\toprule
+Day & $T_{\mathrm{mean}}$ ($^\circ$C) & $T_{\max}$ ($^\circ$C) & Time of $T_{\max}$ & $T_{\min}$ ($^\circ$C) & Time of $T_{\min}$ & RH$_{\max}$ (\%) & RH$_{\min}$ (\%) & Rain (mm) \\
+\midrule
+15 & 16.3 & 19.8 & 15:00 & 13.8 & 02:20 & 79 & 60 & 0.4 \\
+16 & 17.8 & 23.7 & 15:20 & 13.5 & 23:50 & 75 & 43 & 0.0 \\
+17 & 13.1 & 17.2 & 14:30 & 10.3 & 07:20 & 85 & 63 & 0.0 \\
+18 & 14.1 & 19.9 & 14:50 & 10.3 & 06:10 & 79 & 36 & 0.0 \\
+19 & 13.7 & 19.4 & 13:00 & 8.6  & 06:20 & 80 & 47 & 0.0 \\
+20 & 15.9 & 21.1 & 12:00 & 9.1  & 05:10 & 75 & 45 & 0.0 \\
+21 & 17.3 & 21.1 & 15:50 & 13.3 & 05:50 & 84 & 53 & 0.0 \\
+22 & 14.3 & 18.1 & 15:50 & 10.2 & 23:40 & 93 & 71 & 10.6 \\
+23 & 11.2 & 16.0 & 17:30 & 8.1  & 00:00 & 93 & 60 & 6.4 \\
+24 & 12.6 & 17.2 & 12:20 & 6.9  & 01:20 & 82 & 55 & 0.0 \\
+\bottomrule
+\end{tabular}
+
+\endgroup
+\end{table*}
+
+% 2
+
+\begin{table*}[!htbp]
+\centering
+\begingroup
+\fontsize{9}{11}\selectfont
+
+\caption{Multi-year April climatological summary for the 15 years with data available between 2003 and 2019 (2003 and 2007 omitted), from the Agia Paraskevi meteorological station, the closest available long-term weather station to Skala Kallonis on Lesvos. Values are April monthly means for each year. Across the years shown, mean air temperature ($T_{\mathrm{air}}$) was 14.6\,$^\circ$C, mean relative humidity (RH) was 65.9\%, and mean soil temperature ($T_{\mathrm{soil}}$) was 14.4\,$^\circ$C. Data source: Meteo Aegean meteorological database (\url{http://meteo.aegean.gr}).}
+\label{tab:multi_april_climate}
+
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.05}
+
+\begin{tabular}{lccc}
+\toprule
+Year & $T_{\mathrm{air}}$ ($^\circ$C) & RH (\%) & $T_{\mathrm{soil}}$ ($^\circ$C) \\
+\midrule
+2019 & 14.4 & 75.4 & 14.0 \\
+2018 & 18.3 & 62.8 & 14.0 \\
+2017 & 15.1 & 64.2 & 14.9 \\
+2016 & 17.6 & 64.4 & 16.2 \\
+2015 & 13.3 & 68.5 & 12.1 \\
+2014 & 15.7 & 73.2 & 15.0 \\
+2013 & 16.0 & 64.8 & 15.5 \\
+2012 & 14.5 & 73.0 & 15.1 \\
+2011 & 11.4 & 73.9 & 12.7 \\
+2010 & 14.3 & 61.8 & 14.4 \\
+2009 & 13.5 & 61.9 & 13.2 \\
+2008 & 14.2 & 69.8 & 14.2 \\
+2006 & 14.3 & 55.2 & 15.8 \\
+2005 & 13.0 & 53.4 & 14.5 \\
+2004 & 13.1 & 65.6 & 14.7 \\
+\bottomrule
+\end{tabular}
+
+\endgroup
+\end{table*}
+
+% 3
+
+\begin{table*}[!htbp]
+\centering
+\begingroup
+\fontsize{9}{11}\selectfont
+
+\caption{Annual summer maximum air temperatures at the Agia Paraskevi meteorological station, the closest long-term climate station to Skala Kallonis on Lesvos. For each year, the table shows the highest monthly mean daily maximum air temperature in June--August and the month in which it occurred. Mean annual summer maximum temperature across 2003--2019 was 28.2\,$^\circ$C. Data source: Meteo Aegean meteorological database (\url{http://meteo.aegean.gr}).}
+\label{tab:supp_tmax}
+
+\setlength{\tabcolsep}{5pt}
+
+\begin{tabular}{lcc}
+\toprule
+Year & Month of highest value & Highest monthly mean of daily maximum air temperature ($^\circ$C) \\
+\midrule
+2003 & August & 27.4 \\
+2004 & July & 26.0 \\
+2005 & July & 27.0 \\
+2006 & July & 25.7 \\
+2007 & June & 28.6 \\
+2008 & August & 27.4 \\
+2009 & July & 27.0 \\
+2010 & August & 29.0 \\
+2011 & July & 27.0 \\
+2012 & July & 32.1 \\
+2013 & August & 29.0 \\
+2014 & August & 29.0 \\
+2015 & August & 29.4 \\
+2016 & July and August & 29.0 \\
+2017 & July & 28.3 \\
+2018 & August & 29.0 \\
+2019 & August & 29.0 \\
+\bottomrule
+\end{tabular}
+
+\endgroup
+\end{table*}
+
+% 4
+
+\begin{table*}[!htbp]
+\centering
+\caption{Summary of focal-view behavioural metrics for HSC (\textit{H. scabiosae}) and LMA (\textit{L. malachurum}). Activity is the mean number of bees visible outside nests per observation interval; guarding time is the mean duration in seconds. Nest-entry and nest-exit frequencies are mean counts per 10-min focal-view recording. Nest guarding was not assessed for LMA.}
+\label{tab:focal_summary}
+
+\normalsize
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabular}{lcccc}
+\toprule
+Species & Activity & Guarding time (s) & Nest-entry frequency & Nest-exit frequency \\
+\midrule
+HSC & 0.969 & 186.557 & 0.626 & 0.491 \\
+LMA & 0.254 & -- & 0.307 & 0.245 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 5
+
+\begin{table*}[!htbp]
+\centering
+\small
+\caption{Robustness checks for pooled wide-angle generalised additive models (GAMs), fitted to 166 recordings. Within-day variation is the percentage of temperature variation occurring within sampling days. The AIC reduction compares models with and without a sampling-date random intercept; positive values indicate lower AIC when date is included. AIC, Akaike's information criterion.}
+\label{tab:wide_robustness}
+
+\begin{tabular}{lrrrrrr}
+\toprule
+Predictor & Temperature variation within days (\%) & AIC reduction with date & Smooth-term $p$ (no date) & Smooth-term $p$ (within-day centred) & $k$-index ($k=5$) & Smooth-term $p$ ($k=8$) \\
+\midrule
+Ambient air temperature & 59.2 & 37.50 & $<0.001$ & $<0.001$ & 0.729 & $<0.001$ \\
+Shallow soil temperature (2--3 cm) & 72.2 & 54.20 & 0.056 & $<0.001$ & 0.707 & $<0.001$ \\
+Middle soil temperature (5 cm) & 75.5 & 48.46 & 0.001 & $<0.001$ & 0.697 & $<0.001$ \\
+Deep soil temperature (10 cm) & 96.3 & 93.39 & $<0.001$ & $<0.001$ & 0.687 & $<0.001$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 6
+
+\begin{table*}[!htbp]
+\centering
+\small
+\caption{DHARMa residual diagnostics for focal-view entry and exit, and wide-angle generalised additive models (GAMs). Entries are $p$-values for tests of residual uniformity, dispersion, and outliers.}
+\label{tab:dharma}
+
+\begin{tabular}{lrrr}
+\toprule
+Model & Uniformity (Kolmogorov--Smirnov test) & Dispersion & Outliers \\
+\midrule
+Focal: \textit{H. scabiosae} nest entry & 0.018 & 0.520 & 1.000 \\
+Focal: \textit{H. scabiosae} nest exit & 0.034 & 0.604 & 1.000 \\
+Focal: \textit{L. malachurum} nest entry & $<0.001$ & 0.536 & 0.016 \\
+Focal: \textit{L. malachurum} nest exit & $<0.001$ & 0.540 & 0.016 \\
+Pooled: ambient air temperature & 0.995 & 0.528 & 1.000 \\
+Pooled: shallow soil temperature & 0.842 & 0.482 & 1.000 \\
+Pooled: middle soil temperature & 0.412 & 0.482 & 1.000 \\
+Pooled: deep soil temperature & 0.666 & 0.454 & 1.000 \\
+Site-specific: ambient air temperature & 0.785 & 0.584 & 1.000 \\
+Site-specific: shallow soil temperature & 0.191 & 0.594 & 1.000 \\
+Site-specific: middle soil temperature & 0.640 & 0.390 & 1.000 \\
+Site-specific: deep soil temperature & 0.836 & 0.346 & 1.000 \\
+Within-day: ambient air temperature & 0.982 & 0.520 & 1.000 \\
+Within-day: shallow soil temperature & 0.531 & 0.556 & 1.000 \\
+Within-day: middle soil temperature & 0.377 & 0.508 & 1.000 \\
+Within-day: deep soil temperature & 0.219 & 0.482 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 7
+
+\begin{table*}[!htbp]
+\centering
+\caption{Species means for chill-coma recovery and take-off traits in HSC (\textit{H. scabiosae}; $n = 18$) and LMA (\textit{L. malachurum}; $n = 17$). ITD, intertegular distance; $T_R$, righting temperature; $D_R$, time to right; $T_T$, take-off temperature; $D_T$, time to take-off.}
+\label{tab:species_chill_coma}
+
+\small
+\renewcommand{\arraystretch}{1.1}
+
+\begin{tabular}{lccccc}
+\toprule
+Species & ITD (cm) & $T_R$ (°C) & $D_R$ (s) & $T_T$ (°C) & $D_T$ (s) \\
+\midrule
+HSC & 0.340 & 29.8 & 185 & 32.8 & 505 \\
+LMA & 0.206 & 26.4 & 131 & 31.2 & 468 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 8
+
+\begin{table*}[!htbp]
+\centering
+\caption{Linear mixed-effects models (LMMs) examining physiological and behavioural performance traits in HSC (\textit{H. scabiosae}) and LMA (\textit{L. malachurum}). Sampling date was included as a random intercept in all models, and HSC was the reference level for species comparisons. Intertegular distance (ITD) was excluded from these models because it was collinear with species identity. Results are reported as regression coefficients ($\beta$), standard errors, $t$-statistics, and $p$-values. Random-intercept variance for sampling date was 1.148 for righting temperature, 0 for take-off temperature, 0.066 for time to right, and 0 for time to take-off. The take-off temperature and time-to-take-off models had singular fits, indicating negligible estimated variance among sampling dates. The exploratory rows come from separate linear models for each species ($n = 18$ HSC, 17 LMA) that also included ambient temperature (coefficients not shown); ITD coefficients are per cm. ITD was not associated with time to right or time to take-off in either species (all $p \geq 0.24$). Sensitivity models that also included log-transformed time to right or time to take-off are reported in the text.}
+\label{tab:physiology_models}
+
+\normalsize
+\renewcommand{\arraystretch}{1.15}
+
+\begin{tabular}{llrrrr}
+\toprule
+Response variable & Predictor & $\beta$ & Standard error & Test statistic & $p$ \\
+\midrule
+Righting temperature
+& LMA (vs HSC) & -2.488 & 0.876 & $t=-2.84$ & 0.0078 \\
+& Ambient temperature & 0.977 & 0.149 & $t=6.55$ & $<0.001$ \\
+\midrule
+Take-off temperature
+& LMA (vs HSC) & -2.100 & 1.115 & $t=-1.88$ & 0.069 \\
+& Ambient temperature & 1.413 & 0.234 & $t=6.03$ & $<0.001$ \\
+\midrule
+Time to right (log-transformed)
+& LMA (vs HSC) & -0.422 & 0.214 & $t=-1.98$ & 0.057 \\
+& Ambient temperature & 0.033 & 0.036 & $t=0.90$ & 0.377 \\
+\midrule
+Time to take-off (log-transformed)
+& LMA (vs HSC) & 0.003 & 0.251 & $t=0.01$ & 0.989 \\
+& Ambient temperature & 0.058 & 0.053 & $t=1.09$ & 0.284 \\
+\midrule
+Righting temperature, within species (exploratory)
+& ITD, HSC only & 14.26 & 12.14 & $t=1.17$ & 0.259 \\
+& ITD, LMA only & -93.07 & 36.45 & $t=-2.55$ & 0.023 \\
+\midrule
+Take-off temperature, within species (exploratory)
+& ITD, HSC only & -9.79 & 22.69 & $t=-0.43$ & 0.672 \\
+& ITD, LMA only & -91.60 & 41.59 & $t=-2.20$ & 0.045 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 9 
+
+\begin{table*}[!htbp]
+\centering
+\caption{Daily mean number of bees observed outside nests per observation interval in the wide-angle recordings from 15--24 April 2026. Values show mean activity, standard deviation, and number of recordings for each date.}
+\label{tab:daily_activity}
+
+\begin{tabular}{lccc}
+\toprule
+Date & Mean activity & Standard deviation & Number of recordings \\
+\midrule
+15 Apr & 1.36 & 0.91 & 16 \\
+16 Apr & 0.78 & 0.82 & 16 \\
+17 Apr & 0.84 & 0.67 & 16 \\
+18 Apr & 1.49 & 1.16 & 16 \\
+19 Apr & 1.40 & 1.06 & 16 \\
+20 Apr & 1.55 & 1.41 & 15 \\
+21 Apr & 1.10 & 1.12 & 18 \\
+22 Apr & 0.47 & 0.51 & 17 \\
+23 Apr & 0.17 & 0.26 & 18 \\
+24 Apr & 0.99 & 1.07 & 18 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 10
+
+\begin{table*}[!htbp]
+\centering
+\small
+\caption{Pooled generalised additive models (GAMs) of bee activity in relation to each temperature predictor, fitted to 166 wide-angle recordings. Each model included site as a fixed effect and sampling date as a random intercept. EDF, effective degrees of freedom.}
+\label{tab:behavioural_gam}
+
+\begin{tabular}{lrrrrr}
+\toprule
+Predictor & EDF & $F$ & $p$ & Adjusted $R^2$ & Deviance explained (\%) \\
+\midrule
+Ambient air temperature & 2.95 & 22.63 & $<0.001$ & 0.427 & 46.7 \\
+Shallow soil temperature (2--3 cm) & 3.48 & 11.72 & $<0.001$ & 0.342 & 39.3 \\
+Middle soil temperature (5 cm) & 3.64 & 13.26 & $<0.001$ & 0.357 & 40.5 \\
+Deep soil temperature (10 cm) & 3.83 & 38.11 & $<0.001$ & 0.569 & 60.4 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% 11
+
+\begin{table*}[!htbp]
+\centering
+\begingroup
+\fontsize{9}{11}\selectfont
+
+\caption{Linear models (LMs), linear mixed-effects models (LMMs), and generalised linear mixed-effects models (GLMMs) linking environmental predictors to nest activity and abundance in \textit{H. scabiosae} (HSC) and \textit{L. malachurum} (LMA). Sampling day and/or site were included as random effects in mixed-effects models. GLMM results are reported as log-odds with Wald $z$-statistics; LM and LMM results are reported as regression coefficients with $t$-statistics. Environmental predictors in the species-combined abundance model were standardised. Their main-effect coefficients represent slopes for HSC, and interaction coefficients represent differences in slope for LMA relative to HSC.}
+\label{tab:lm_models}
+
+\begin{tabular}{lllllll}
+\toprule
+Response variable & Model & Predictor & $\beta$ & Standard error & Test statistic & $p$ \\
+\midrule
+
+\multicolumn{7}{l}{\textbf{Focal-view occurrence models}} \\
+Guard presence (HSC) & GLMM & Shallow temperature (scaled) & -0.942 & 0.269 & $z=-3.50$ & $<0.001$ \\
+
+\midrule
+
+Nest guarding duration (HSC, log) & LMM & Middle temperature (scaled) & 0.506 & 0.166 & $t=3.04$ & 0.004 \\
+
+\midrule
+
+\multicolumn{7}{l}{\textbf{Abundance model (species-combined)}} \\
+$\log(\text{abundance} + 1)$ & LM & Species (LMA vs HSC) & -0.368 & 0.051 & $t=-7.25$ & $<0.001$ \\
+& & Ambient temperature & -0.028 & 0.056 & $t=-0.51$ & 0.614 \\
+& & Shallow temperature & 0.318 & 0.083 & $t=3.85$ & $<0.001$ \\
+& & Middle temperature & -0.289 & 0.103 & $t=-2.81$ & 0.006 \\
+& & Deep temperature & -0.045 & 0.077 & $t=-0.59$ & 0.558 \\
+& & Light intensity & 0.242 & 0.051 & $t=4.74$ & $<0.001$ \\
+& & Species $\times$ ambient temperature & 0.088 & 0.079 & $t=1.11$ & 0.269 \\
+& & Species $\times$ shallow soil temperature & -0.223 & 0.117 & $t=-1.91$ & 0.058 \\
+& & Species $\times$ middle soil temperature & 0.169 & 0.145 & $t=1.16$ & 0.248 \\
+& & Species $\times$ deep soil temperature & 0.088 & 0.109 & $t=0.81$ & 0.421 \\
+& & Species $\times$ light intensity & -0.207 & 0.072 & $t=-2.87$ & 0.005 \\
+\bottomrule
+\end{tabular}
+
+\endgroup
+\end{table*}
+
+% 12
+
+\begin{table*}[!htbp]
+\centering
+\begingroup
+\fontsize{8.5}{10}\selectfont
+\caption{Generalised additive models (GAMs) of nest-entry and nest-exit frequency in \textit{H. scabiosae} (HSC) and \textit{L. malachurum} (LMA), fitted to 95 focal-view observations. Each model included smooth terms for all six environmental predictors. Frequencies are counts of nest entries or exits per 10-min focal-view recording. EDF, effective degrees of freedom.}
+\label{tab:gam_models}
+
+\begin{tabular}{llrrrrr}
+\toprule
+Response & Predictor & EDF & Reference degrees of freedom & $F$ & $p$ & Deviance explained (\%) \\
+\midrule
+HSC nest-entry frequency & Ambient air temperature & 1.00 & 1.00 & 0.63 & 0.429 & 40.5 \\
+ & Surface soil temperature & 2.13 & 2.74 & 3.54 & 0.024 & 40.5 \\
+ & Shallow soil temperature & 1.00 & 1.00 & 1.76 & 0.188 & 40.5 \\
+ & Middle soil temperature & 2.54 & 3.28 & 1.25 & 0.246 & 40.5 \\
+ & Deep soil temperature & 1.00 & 1.00 & 0.03 & 0.859 & 40.5 \\
+ & Light intensity & 1.00 & 1.00 & 0.02 & 0.883 & 40.5 \\
+\midrule
+HSC nest-exit frequency & Ambient air temperature & 2.24 & 2.83 & 1.00 & 0.333 & 28.7 \\
+ & Surface soil temperature & 1.00 & 1.00 & 7.43 & 0.008 & 28.7 \\
+ & Shallow soil temperature & 1.00 & 1.00 & 4.46 & 0.038 & 28.7 \\
+ & Middle soil temperature & 1.00 & 1.00 & 0.33 & 0.568 & 28.7 \\
+ & Deep soil temperature & 1.00 & 1.00 & 0.47 & 0.497 & 28.7 \\
+ & Light intensity & 1.00 & 1.00 & 0.46 & 0.501 & 28.7 \\
+\midrule
+LMA nest-entry frequency & Ambient air temperature & 1.00 & 1.00 & 0.40 & 0.527 & 34.1 \\
+ & Surface soil temperature & 2.36 & 3.00 & 6.32 & $<0.001$ & 34.1 \\
+ & Shallow soil temperature & 1.58 & 1.95 & 2.23 & 0.143 & 34.1 \\
+ & Middle soil temperature & 1.00 & 1.00 & 0.09 & 0.769 & 34.1 \\
+ & Deep soil temperature & 1.00 & 1.00 & 0.75 & 0.390 & 34.1 \\
+ & Light intensity & 1.48 & 1.79 & 0.31 & 0.725 & 34.1 \\
+\midrule
+LMA nest-exit frequency & Ambient air temperature & 1.00 & 1.00 & 4.61 & 0.035 & 23.0 \\
+ & Surface soil temperature & 1.00 & 1.00 & 1.98 & 0.163 & 23.0 \\
+ & Shallow soil temperature & 1.00 & 1.00 & 1.64 & 0.203 & 23.0 \\
+ & Middle soil temperature & 3.16 & 4.01 & 2.44 & 0.052 & 23.0 \\
+ & Deep soil temperature & 1.00 & 1.00 & 0.47 & 0.494 & 23.0 \\
+ & Light intensity & 1.00 & 1.00 & 2.01 & 0.160 & 23.0 \\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{table*}
+
+% 1
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Supplementary_Halictus_scabiosae.png}
+\caption{Field observations and chill-coma recovery assays in \textit{H. scabiosae}. (a) Adult in profile. (b) Nesting aggregation among Persian clover (\textit{Trifolium resupinatum}); black lines mark open nest entrances. (c) An individual entering a nest, marked by a black line. (d) Capture with an insect net and transfer to a plastic vial for the recovery assay. (e) An immobilised individual positioned dorsal-side up beside a scale for morphometric analysis in ImageJ; the red line indicates intertegular distance (ITD). (f) An individual recovering in a ventral-side-up posture on an insulated surface; the curled abdomen is characteristic of recovery behaviour in this species. (g) An individual guarding a nest entrance.}
+\label{fig:Supp_HS}
+\end{figure*}
+
+% 2
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{Final_figures/L_malachurum.png}
+\caption{\textit{L. malachurum} during chill-coma recovery assays. (a) An individual positioned ventral-side down beside a scale for image-based measurement of intertegular distance. (b) An individual that has righted itself but has not yet initiated flight.}
+\label{fig:L_malachurum}
+\end{figure}
+
+% 3
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Multipanel_supplementary_GAM.png}
+\caption{Site-specific generalised additive model (GAM) smooths showing the relationship between wide-angle bee activity (mean number of bees observed) and shallow soil temperature (2--3~cm) and middle soil temperature (5~cm) at Sites 1 and 2. Shaded ribbons indicate 95\% confidence intervals.}
+\label{fig:sup_site_specific_GAM}
+\end{figure*}
+
+% 4
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/FINAL_GAM_ABUNDANCE_ONLY.png}
+\caption{Species-specific generalised additive model (GAM) smooths relating abundance ($\log(\text{abundance}+1)$) of \textit{H. scabiosae} and \textit{L. malachurum} to (a) ambient air temperature, (b) surface soil temperature, (c) shallow soil temperature (2--3~cm), (d) middle soil temperature (5~cm), (e) deep soil temperature (10~cm), and (f) light intensity (all scaled). Each environmental variable was fitted in a separate single-predictor model for each species, using the 95 focal-view observations with complete logger data. Shaded ribbons indicate 95\% confidence intervals.}
+\label{fig:sup_gam_abundance}
+\end{figure*}
+
+% 5
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Multipanel_supplementary_environmental_predictors.png}
+\caption{Species-specific generalised additive model (GAM) smooths relating nest entry frequency (entries per 10-min focal-view recording) in \textit{H. scabiosae} and \textit{L. malachurum} to (a) ambient air temperature, (b) surface soil temperature, (c) shallow soil temperature (2--3~cm), (d) middle soil temperature (5~cm), (e) deep soil temperature (10~cm), and (f) light intensity (all scaled). Each environmental variable was fitted in a separate single-predictor model for each species, using the 95 focal-view observations with complete logger data. Shaded ribbons indicate 95\% confidence intervals.}
+\label{fig:sup_gam_environmental_predictors}
+\end{figure*}
+
+% 6
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Nest_opening.png}
+\caption{Nest opening and new nest excavation behaviour in \textit{H. scabiosae} at Site 2. (a--f) Nest opening recorded on 15 April during the 10:00--11:00~h observation period. Timestamps are minutes:seconds after 10:00~h: (a) 00:00, (b) 08:03, (c) 09:46, (d) 09:52, (e) 11:56, and (f) 12:47; the camera continued recording after the 10-min analysed window. The sequence from (b) to (f) spans approximately 4~min 44~s. Red arrows mark the nest entrance; an individual at the entrance is visible in panels (c)--(e). (g--l) Excavation of a new nest entrance in loose soil recorded on 19 April during the 13:00--14:00~h observation period. Timestamps are minutes:seconds after 13:00~h: (g) 00:41, (h) 01:19, (i) 02:37, (j) 03:22, (k) 04:36, and (l) 04:47. The sequence spans approximately 4~min 06~s; the excavating individual is visible in panels (g)--(k).}
+\label{fig:Nest_opening}
+\end{figure*}
+
+% 7
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Nest_closing.png}
+\caption{Nest-closing behaviour in \textit{H. scabiosae} at Site 2. (a--g) Simultaneous closure of two nest entrances on 17 April during the 13:00--14:00~h observation period. Times are elapsed from the start of the recording: (a) 07:31, (b) 07:49, (c) 08:17, (d) 08:26, (e) 08:28, (f) 08:50, and (g) 09:23. The sequence spans approximately 1~min 52~s. (h--n) Nest-closing behaviour on 15 April during the 16:00--17:00~h observation period. Times are elapsed from the start of the recording: (h) 00:36, (i) 01:21, (j) 02:20, (k) 04:35, (l) 05:18, (m) 06:33, and (n) 09:26. The sequence spans approximately 8~min 50~s.}
+\label{fig:Nest_closing}
+\end{figure*}
+
+% 8
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{Final_figures/Same_day_nest.png}
+\caption{Hourly changes in nest entrance status within the mixed-species aggregation at Site 1. Panels show the same field of view at (a) 10:00~h, (b) 11:00~h, (c) 12:00~h, (d) 13:00~h, and (e) 14:00~h. Red arrows mark open or partially open entrances of \textit{H. scabiosae} and \textit{L. malachurum}.}
+\label{fig:Same_day_nest}
+\end{figure*}
+
+\end{document}
